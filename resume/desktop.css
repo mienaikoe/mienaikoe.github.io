@@ -1,0 +1,102 @@
+@font-face{
+	font-family: Gudea;
+	src: url(fonts/Gudea-Regular-webfont.woff);
+	src: url(fonts/Gudea-Regular-webfont.eot);
+	src: url(fonts/Gudea-Regular-webfont.otf);
+	src: url(fonts/Gudea-Regular-webfont.svg);
+}
+
+@font-face{
+	font-family: Lovelo Black;
+	src: url(fonts/Lovelo_Black.woff);
+	src: url(fonts/Lovelo_Black.eot);
+	src: url(fonts/Lovelo_Black.otf);
+	src: url(fonts/Lovelo_Black.svg);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #aaa;
+	font-family: Gudea;
+}
+
+#centra{
+	background-color: white;
+	width: 960px;
+	padding: 30px;
+	margin: 0px auto;
+}
+.headlines{
+	margin: 1em 0px;
+	text-align: center;
+}
+
+h1{
+	font-size: 3em;
+	letter-spacing: 0.1em;
+	font-family: Lovelo Black;
+	margin: 0.4em 0 0.2em;
+}
+
+h2{
+	font-size: 2em;
+	clear: both;
+	font-family: Lovelo Black;
+	float: none;
+}
+
+h3{
+	font-family: Lovelo Black;
+	margin: 0px;
+}
+
+a.contact{
+	text-align: center;
+	text-decoration: none;
+	color: #37a;
+	font-weight: bold;
+	display: block;
+}
+a.contact:visited{
+	color: #77a;
+}
+
+
+.section{
+	margin: 10px 0px;
+	clear: both;
+	overflow: hidden;
+}
+
+
+.timeline .year{
+	font-family: Lovelo Black;
+	text-align: center;
+	width: 72px;
+	display: inline-block;
+}
+.timeline .ditch{
+	width: 50px;
+	height: 1px;
+	float: left;
+}
+.timeline .period{
+	border-top: 3px solid black;
+	padding-top: 0.5em;
+	width: 450px;
+	float: left;
+	vertical-align: top;
+}
+.timeline .period h3{
+	font-size: 1.2em;
+	text-align: right;
+}
+.timeline .period .place{
+	font-style: italic;
+	line-height: 1.2em;
+	text-align: right;
+}
+.timeline .period .points{
+	padding-left: 20px;
+}
