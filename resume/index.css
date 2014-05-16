@@ -18,7 +18,7 @@ body {
 
 #centra{
 	background-color: white;
-	width: 960px;
+	max-width: 900px;
 	padding: 30px;
 	margin: 0px auto;
 }
@@ -59,39 +59,72 @@ a.contact:visited{
 
 
 .section{
-	margin: 10px 0px;
+	margin-top: 7em;
 	clear: both;
 	overflow: hidden;
 }
 
-
-.timeline .year{
-	font-family: Lovelo Black;
-	text-align: center;
-	width: 72px;
-	display: inline-block;
-}
-.timeline .ditch{
+.section .ditch{
 	width: 50px;
 	height: 1px;
 	float: left;
 }
-.timeline .period{
+
+
+.skillwords{
+	float: left;
+	text-align: left;
+}
+.skillbars{
+	float: right;
+	text-align: right;
+}
+.skillbar{
+	font-weight: bold;
+	text-align: right;
+	float: right;
+}
+.skillbar.high{
+	color: #9B5;
+}
+.skillbar.medium{
+	color: #BB4;
+}
+.skillbar.low{
+	color: #B95;
+}
+
+
+.card{
 	border-top: 3px solid black;
 	padding-top: 0.5em;
-	width: 450px;
+	margin-top: 2em;
+	max-width: 425px;
 	float: left;
-	vertical-align: top;
 }
-.timeline .period h3{
+
+@media screen and (max-width: 980px) {
+	.card{
+		float: right;
+	}
+}
+
+
+.card .stretcher{
+	height: 1em;
+}
+
+.card h3{
 	font-size: 1.2em;
 	text-align: right;
 }
-.timeline .period .place{
-	font-style: italic;
+.card .time, .card .role, .card .place{
 	line-height: 1.2em;
 	text-align: right;
 }
-.timeline .period .points{
+.card .place{
+	font-style: italic;
+}
+.card .points{
 	padding-left: 20px;
 }

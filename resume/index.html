@@ -1,8 +1,97 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Desktop CSS -->
-		<link rel="stylesheet" href="desktop.css"></link>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		
+		<link rel="stylesheet" href="index.css"></link>
+		
+		
+		
+		<script type="text/javascript">		
+			var skills = {
+				language: [
+					{name: "JavaScript", value: 2},
+					{name: "Ruby", value: 2},
+					{name: "Java", value: 2},
+					{name: "General SQL", value: 1},
+					{name: "C++", value: 0},
+					{name: "PHP", value: 0},
+					{name: "Python", value: 0}
+				],
+				library: [
+					{name: "JQuery", value: 2},
+					{name: "Web Audio API", value: 2},
+					{name: "Ruby on Rails", value: 2},
+					{name: "Spring", value: 1},
+					{name: "AngularJS", value: 1},
+					{name: "Google App Engine", value: 1},
+					{name: "Android SDK", value: 0},
+				]
+			};
+			
+			var levels = [
+				"low",
+				"medium",
+				"high",
+			];
+			
+			
+			String.prototype.titlecase = function(){
+				return this.charAt(0).toUpperCase() + this.substr(1,this.length);
+			}
+			Number.prototype.times = function(fxn){
+				for( _i=0; _i<this; _i++ ){
+					fxn();
+				}
+			}
+			
+			function createSkillSet(key){
+				if( !skills[key] ){
+					throw new Error("Could not find skill set requested: "+key);
+				}
+			
+				var containerId = key+"_skills"
+				var container = document.getElementById(containerId);
+				if( !container ){
+					throw new Error("Could not find container with id "+containerId);
+				}
+				
+				var stretcher = document.createElement("div");
+				stretcher.className = "stretcher";
+				(100).times(function(){
+					stretcher.innerHTML += "&nbsp; ";
+				});
+				container.appendChild(stretcher);
+				
+				var skillSet = document.createElement("div");
+				skillSet.className = "skillSet";
+				container.appendChild(skillSet);
+				
+				skills[key].forEach(function(skillObj){
+					var skill = document.createElement("div");
+					skill.className = "skill";
+				
+					var word = document.createElement("span");
+					word.className = "skillword";
+					word.innerHTML = skillObj.name;
+					skill.appendChild(word);
+					
+					var bar = document.createElement("span");
+					bar.className = "skillbar "+levels[skillObj.value];
+					bar.innerHTML = levels[skillObj.value].titlecase();
+					skill.appendChild(bar);
+					
+					skillSet.appendChild(skill);
+				}, this);
+			}
+			
+			document.addEventListener( "DOMContentLoaded", function(){
+				document.removeEventListener( "DOMContentLoaded", arguments.callee, false );
+				createSkillSet("language");
+				createSkillSet("library");
+			}, false );
+			
+		</script>
 	</head>
 	<body>
 		<div id="full">
@@ -10,31 +99,41 @@
 				<div class="headlines">
 					<h1>Jesse T. Lee</h1>
 					<a class="contact" href="mailto:mienaikoe@gmail.com">mienaikoe@gmail.com</a>
-					<a class="contact" href="tel:646-588-9960">646-588-9960</a>
+					<a class="contact" href="tel:646-288-9960">646-288-9960</a>
 					<a class="contact" href="https://github.com/mienaikoe">https://github.com/mienaikoe</a>
 				</div>
 			
 				<div class="section">
 					<h2>Skills</h2>
-					<div class="skillmap">
-						
+					<div id="language_skills" class="skill card">
+						<h3>Languages</h3>
+					</div>
+					<div class="ditch">
+					</div>
+					<div id="library_skills" class="skill card">
+						<h3>Libraries</h3>
 					</div>
 				</div>
 				
-				<div class="timeline section">
+				<div class="section">
 					<h2>Experience</h2>
-					<div class="period">
+					<div class="experience card">
 						<h3>Bloomberg LP</h3>
+						<div class="role">Web Developer</div>
+						<div class="time">2010 - Present</div>
 						<div class="place">New York, NY</div>
 						<ul class="points">
-							<li>Delivered crucial framework components of Bloomberg's legal research web application.</li>
+							<li>Replaced and maintained critical services for Bloomberg's legal research web application.</li>
 							<li>Coordinated work amongst small team of developers in separate cities.</li>
-							<li>Trained in algorithms and general software engineering during 15-week intensive introductory course.</li>
+							<li>Picked up Ruby/Rails, and Java/Spring on the job.</li>
+							<li>Learned C/C++ and computer science concepts during 12-week intensive introductory course.</li>
 						</ul>
 					</div>
 					<div class="ditch"></div>
-					<div class="period">
+					<div class="experience card">
 						<h3>Goodrich, Inc.</h3>
+						<div class="role">Engineering Intern</div>
+						<div class="time">2008 - 2010</div>
 						<div class="place">Brecksville, OH</div>
 						<ul>
 							<li>Machined carbon composite parts for thermal and electrical testing</li>
@@ -43,23 +142,29 @@
 					</div>
 				</div>
 				
-				<div class="timeline section">
+				<div class="section">
 					<h2>Education</h2>
-					<div class="period">
+					<div class="education card">
 						<h3>Case Western Reserve University</h3>
+						<div class="role">Undergraduate Student</div>
+						<div class="time">2006 - 2010</div>
 						<div class="place">Cleveland, OH</div>
 						<ul>
-							<li>Studied Engineering</li>
-							<li>Learned html/css/js in free time</li>
+							<li>Covered higher level Calculus and Engineering Courses</li>
+							<li>Co-led a team of student engineers in a farm irrigation project and a solar furnace project.</li>
+							<li>Learned html/css/js while building a simple site for an on-campus animal rights group</li>
+							<li>Was involved with several university musical groups, and composed music in free time.</li>
 						</ul>
 					</div>			
 					<div class="ditch"></div>
-					<div class="period">
+					<div class="education card">
 						<h3>Dublin Scioto High School</h3>
+						<div class="role">Student</div>
+						<div class="time">2002-2006</div>
 						<div class="place">Dublin, OH</div>
 						<ul>
-							<li>Prepared for college</li>
-							<li>Learned how to work with Cisco routers.</li>
+							<li>Prepared for college as much as is possible during this time in one's life.</li>
+							<li>Worked with Cisco routers and switches in an independent learning class</li>
 						</ul>
 					</div>
 				</div>			
