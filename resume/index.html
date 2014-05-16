@@ -8,31 +8,26 @@
 		
 		<script type="text/javascript">		
 			var skills = {
-				language: [
-					{name: "JavaScript", value: 2},
-					{name: "Ruby", value: 2},
-					{name: "Java", value: 2},
-					{name: "HTML/CSS", value: 2},
-					{name: "General SQL", value: 1},
-					{name: "C++", value: 0},
-					{name: "PHP", value: 0}
+				proficient: [
+					"JavaScript/JQuery",
+					"Ruby/Rails",
+					"Java/Spring",
+					"Web Audio API",
+					"MySQL & Oracle Databases",
+					"HTML/CSS",
 				],
-				library: [
-					{name: "JQuery", value: 2},
-					{name: "Web Audio API", value: 2},
-					{name: "Ruby on Rails", value: 2},
-					{name: "AngularJS", value: 1},
-					{name: "Spring", value: 1},
-					{name: "Apache Server", value: 1},
-					{name: "Android SDK", value: 0},
+				familiar: [
+					"AngularJS",
+					"Redis",
+					"HTML5 Canvas",
+					"PHP",
+					"Apache Server",
+					"Android SDK",
+					"PostgreSQL",
+					"C++",
+					"Spring",
 				]
 			};
-			
-			var levels = [
-				"acquainted",
-				"familiar",
-				"proficient",
-			];
 			
 			
 			String.prototype.titlecase = function(){
@@ -54,7 +49,11 @@
 				if( !container ){
 					throw new Error("Could not find container with id "+containerId);
 				}
+				var heading = document.createElement("h3");
+				heading.innerHTML = key.titlecase();
+				container.appendChild(heading);
 				
+				// Hacky, but can't find anything to make CSS do it any other way
 				var stretcher = document.createElement("div");
 				stretcher.className = "stretcher";
 				(100).times(function(){
@@ -66,28 +65,18 @@
 				skillSet.className = "skillSet";
 				container.appendChild(skillSet);
 				
-				skills[key].forEach(function(skillObj){
+				skills[key].forEach(function(skillName){
 					var skill = document.createElement("div");
-					skill.className = "skill";
-				
-					var word = document.createElement("span");
-					word.className = "skillword";
-					word.innerHTML = skillObj.name;
-					skill.appendChild(word);
-					
-					var bar = document.createElement("span");
-					bar.className = "skillbar "+levels[skillObj.value];
-					bar.innerHTML = levels[skillObj.value].titlecase();
-					skill.appendChild(bar);
-					
+					skill.className = "skillpill";
+					skill.innerHTML = skillName;
 					skillSet.appendChild(skill);
 				}, this);
 			}
 			
 			document.addEventListener( "DOMContentLoaded", function(){
 				document.removeEventListener( "DOMContentLoaded", arguments.callee, false );
-				createSkillSet("language");
-				createSkillSet("library");
+				createSkillSet("proficient");
+				createSkillSet("familiar");
 			}, false );
 			
 		</script>
@@ -117,13 +106,11 @@
 			
 				<div class="section">
 					<h2>Skills</h2>
-					<div id="language_skills" class="skill card">
-						<h3>Languages</h3>
+					<div id="proficient_skills" class="skill card">
 					</div>
 					<div class="ditch">
 					</div>
-					<div id="library_skills" class="skill card">
-						<h3>Libraries</h3>
+					<div id="familiar_skills" class="skill card">
 					</div>
 				</div>
 				
@@ -138,7 +125,7 @@
 							<li>Replaced and maintained critical services for Bloomberg's legal research web application.</li>
 							<li>Coordinated work amongst small team of developers in separate cities.</li>
 							<li>Picked up Ruby/Rails, and Java/Spring on the job.</li>
-							<li>Learned C/C++ and computer science concepts during 12-week intensive introductory course.</li>
+							<li>Learned C++ and computer science concepts during 15-week intensive introductory course.</li>
 						</ul>
 					</div>
 					<div class="ditch"></div>
@@ -162,10 +149,9 @@
 						<div class="time">2006 - 2010</div>
 						<div class="place">Cleveland, OH</div>
 						<ul>
-							<li>Covered higher level Calculus and Engineering Courses</li>
 							<li>Co-led a team of student engineers in a farm irrigation project and a solar furnace project.</li>
-							<li>Learned html/css/js while building a simple site for an on-campus animal rights group</li>
-							<li>Was involved with several university musical groups, and composed music in free time.</li>
+							<li>Learned html/css/js while building a simple site for a campus activism group</li>
+							<li>Was involved with several university musical groups, and composed electronic music in spare time.</li>
 						</ul>
 					</div>			
 					<div class="ditch"></div>
@@ -175,7 +161,8 @@
 						<div class="time">2002-2006</div>
 						<div class="place">Dublin, OH</div>
 						<ul>
-							<li>Prepared for college as much as is possible during this time in one's life.</li>
+							<li>Prepared for college with core cirriculum</li>
+							<li>Was a voluntary member of Marching Band, Jazz Band, and Theatre Orchestra</li>
 							<li>Worked with Cisco routers and switches in an independent learning class</li>
 						</ul>
 					</div>

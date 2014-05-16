@@ -72,7 +72,7 @@ a.contact:visited{
 
 
 .section{
-	margin-top: 7em;
+	margin-top: 6em;
 	clear: both;
 	overflow: hidden;
 }
@@ -84,28 +84,18 @@ a.contact:visited{
 }
 
 
-.skillwords{
+.skillpill{
 	float: left;
 	text-align: left;
+	border-bottom: 2px solid black;
+	border-radius: 5px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	padding: 5px 10px;
+	margin: 2px 7px;
 }
-.skillbars{
-	float: right;
-	text-align: right;
-}
-.skillbar{
-	font-weight: bold;
-	text-align: right;
-	float: right;
-}
-.skillbar.proficient{
-	color: #480;
-}
-.skillbar.familiar{
-	color: #980;
-}
-.skillbar.acquainted{
-	color: #A61;
-}
+
 
 
 .card{
