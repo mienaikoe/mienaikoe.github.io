@@ -84,13 +84,13 @@ a.contact:visited{
 	text-align: right;
 	float: right;
 }
-.skillbar.high{
+.skillbar.proficient{
 	color: #9B5;
 }
-.skillbar.medium{
+.skillbar.familiar{
 	color: #BB4;
 }
-.skillbar.low{
+.skillbar.acquainted{
 	color: #B95;
 }
 
