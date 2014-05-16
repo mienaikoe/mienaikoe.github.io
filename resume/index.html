@@ -16,7 +16,7 @@
 					"MySQL & Oracle Databases",
 					"HTML/CSS",
 				],
-				familiar: [
+				practiced: [
 					"AngularJS",
 					"Redis",
 					"HTML5 Canvas",
@@ -75,8 +75,9 @@
 			
 			document.addEventListener( "DOMContentLoaded", function(){
 				document.removeEventListener( "DOMContentLoaded", arguments.callee, false );
-				createSkillSet("proficient");
-				createSkillSet("familiar");
+				for( key in skills ){
+					createSkillSet(key);
+				}
 			}, false );
 			
 		</script>
@@ -110,7 +111,7 @@
 					</div>
 					<div class="ditch">
 					</div>
-					<div id="familiar_skills" class="skill card">
+					<div id="practiced_skills" class="skill card">
 					</div>
 				</div>
 				
@@ -150,7 +151,6 @@
 						<div class="place">Cleveland, OH</div>
 						<ul>
 							<li>Co-led a team of student engineers in a farm irrigation project and a solar furnace project.</li>
-							<li>Learned html/css/js while building a simple site for a campus activism group</li>
 							<li>Was involved with several university musical groups, and composed electronic music in spare time.</li>
 						</ul>
 					</div>			
@@ -161,7 +161,6 @@
 						<div class="time">2002-2006</div>
 						<div class="place">Dublin, OH</div>
 						<ul>
-							<li>Prepared for college with core cirriculum</li>
 							<li>Was a voluntary member of Marching Band, Jazz Band, and Theatre Orchestra</li>
 							<li>Worked with Cisco routers and switches in an independent learning class</li>
 						</ul>
@@ -177,7 +176,8 @@
 						<div class="time">2013 - Present</div>
 						<div class="place"><a href="http://mienaikoe.github.io/nodea">http://mienaikoe.github.io/nodea</a></div>
 						<ul class="points">
-							<li>Used Web Audio API and JavaScript with jQuery to make a computer-keyboard-based sound controller and digital audio workstation for the web</li>
+							<li>Used Web Audio API and JavaScript with jQuery to make a computer-keyboard-based sound controller</li>
+							<li>Combined sound controller with pure JavaScript layer to make a functional digital audio workstation for the web</li>
 						</ul>
 					</div>
 					<div class="ditch"></div>
