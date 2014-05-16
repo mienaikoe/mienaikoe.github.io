@@ -50,12 +50,25 @@ a.contact{
 	text-align: center;
 	text-decoration: none;
 	color: #37a;
-	font-weight: bold;
+	font-size: 14px;
+	font-weight: normal;
 	display: block;
 }
+a.contact img{
+	height: 16px;
+}
+a.contact span{
+	height: 16px;
+	line-height: 16px;
+	display: inline-block;
+	vertical-align: top;
+}
+
 a.contact:visited{
 	color: #77a;
 }
+
+
 
 
 .section{
@@ -85,20 +98,20 @@ a.contact:visited{
 	float: right;
 }
 .skillbar.proficient{
-	color: #9B5;
+	color: #480;
 }
 .skillbar.familiar{
-	color: #BB4;
+	color: #980;
 }
 .skillbar.acquainted{
-	color: #B95;
+	color: #A61;
 }
 
 
 .card{
 	border-top: 3px solid black;
 	padding-top: 0.5em;
-	margin-top: 2em;
+	margin-top: 1.5em;
 	max-width: 425px;
 	float: left;
 }
