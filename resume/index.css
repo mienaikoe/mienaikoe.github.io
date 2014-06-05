@@ -26,7 +26,7 @@ body {
 	margin: 0px auto;
 }
 .headlines{
-	margin: 1em 0px;
+	margin-top: 1em;
 	text-align: center;
 }
 
@@ -95,7 +95,7 @@ a.contact:visited{
 	border-radius: 5px;
 	height: 16px;
 	line-height: 16px;
-	font-size: 16px;
+	font-size: 1em;
 	padding: 5px 10px;
 	margin: 2px 7px;
 }
@@ -114,6 +114,23 @@ a.contact:visited{
 	.card{
 		margin-top: 100px;
 		float: right;
+	}
+}
+
+@media print{
+	body{
+		font-size: 12px;
+	}
+	.skillpill{
+		border-bottom: 2pt solid black;
+		border-radius: 0pt;
+	}
+	.section{
+		page-break-inside: avoid;
+	}
+	.card{
+		margin-top: 0.3in;
+		max-width: 3in;
 	}
 }
 
