@@ -117,6 +117,9 @@ a.contact:visited{
 	body{
 		font-size: 12px;
 	}
+        #centra{
+            border: 0;
+        }
 	.skillpill{
 		border-bottom: 2pt solid black;
 		border-radius: 0pt;
