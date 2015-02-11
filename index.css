@@ -1,19 +1,8 @@
-@font-face{
-	font-family: "Gudea";
-	src: url(fonts/Gudea-Regular-webfont.woff);
-}
-
-@font-face{
-	font-family: "Lovelo Black";
-	src: url(fonts/Lovelo_Black.woff);
-}
-
-
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #ccc;
-	font-family: Gudea;
+	font-family: kiroregular;
 }
 
 #centra{
@@ -31,22 +20,23 @@ body {
 }
 
 h1{
-	font-size: 3em;
+	font-size: 3.3em;
 	letter-spacing: 0.1em;
-	font-family: Lovelo Black;
+	font-family: kiroregular;
 	margin: 0.4em 0 0.2em;
+        font-weight: normal;
 }
 
 h2{
 	font-size: 2em;
 	clear: both;
-	font-family: Lovelo Black;
+	font-family: Gudea;
 	float: none;
 	margin-bottom: 0;
 }
 
 h3{
-	font-family: Lovelo Black;
+	font-family: Gudea;
 	margin: 0px;
 }
 
@@ -56,7 +46,8 @@ a.contact{
 	color: #37a;
 	font-size: 14px;
 	font-weight: normal;
-	display: block;
+	display: inline-block;
+        margin: 0px 10px;
 }
 a.contact img{
 	height: 16px;
@@ -87,11 +78,16 @@ a.contact:visited{
 	float: left;
 }
 
+.clearfix{
+    clear: both;
+    height: 1px;
+}
+
 
 .skillpill{
 	float: left;
 	text-align: left;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid black;
 	border-radius: 5px;
 	height: 16px;
 	line-height: 16px;
@@ -103,7 +99,7 @@ a.contact:visited{
 
 
 .card{
-	border-top: 3px solid black;
+	border-top: 2px solid black;
 	padding-top: 15px;
 	margin-top: 50px;
 	max-width: 425px;
