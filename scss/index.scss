@@ -47,10 +47,11 @@ h2{
 }
 
 h3{
-    font-size: 1.2em;
-    line-height: 1.3em;
+    font-size: 1.0em;
+    line-height: 1.4em;
     font-weight: bold;
-    margin: 0px;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 
@@ -66,9 +67,10 @@ h3{
     .contact{
         width: $contact_dimension;
         height: $contact_dimension;
+        line-height: 32px;
+        text-align: center;
         background-color: $trim;
         color: #FFFFFF;
-        cursor: pointer;
         transition: all 0.3s ease;
         &:hover{
             color: $trim;
@@ -99,8 +101,37 @@ h3{
     margin-bottom: 30px;
 }
 
+
+$skill_entry_height:1.1em;
+
 #skills{
-    
+    .column{
+        width: 197px;
+        margin-top: 20px;
+        display:inline-block;
+        .entry{
+            height: 1.4em;
+            line-height: $skill_entry_height;
+            font-size: 0.8em;
+            .rating{
+                height: $skill_entry_height;
+                width: 21px;
+                float: left;
+                .bar{
+                    height: $skill_entry_height;
+                    width: 5px;
+                    background-color: $trim;
+                    margin: 0px 1px;
+                    float: right;
+                }
+            }
+            .name{
+                height: $skill_entry_height;
+                margin: 0px 4px;
+                float: left;
+            }
+        }
+    }
 }
 
 

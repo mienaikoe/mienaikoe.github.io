@@ -34,72 +34,102 @@ h2 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000349}}
 h3 {
-  font-size: 1.2em;
-  line-height: 1.3em;
+  font-size: 1.0em;
+  line-height: 1.4em;
   font-weight: bold;
-  margin: 0px; }
+  margin: 0;
+  text-transform: uppercase; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000362}}
 #contacts {
   position: absolute;
   top: 100px;
   left: 0px;
   width: 32px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000367}}
   #contacts .contact {
     width: 32px;
     height: 32px;
+    line-height: 32px;
+    text-align: center;
     background-color: #22ccaa;
     color: #FFFFFF;
-    cursor: pointer;
     transition: all 0.3s ease; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000375}}
     #contacts .contact:hover {
       color: #22ccaa;
       background-color: #FFFFFF; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000382}}
 #brand {
   margin-bottom: 24px;
   text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000385}}
   #brand .lead {
     height: 0.3em;
     width: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000389}}
   #brand p {
     font-size: 0.75em;
     line-height: 1em;
     margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003100}}
 .section {
   margin-bottom: 30px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003108}}
+#skills .column {
+  width: 197px;
+  margin-top: 20px;
+  display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003112}}
+  #skills .column .entry {
+    height: 1.4em;
+    line-height: 1.1em;
+    font-size: 0.8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003116}}
+    #skills .column .entry .rating {
+      height: 1.1em;
+      width: 21px;
+      float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003120}}
+      #skills .column .entry .rating .bar {
+        height: 1.1em;
+        width: 5px;
+        background-color: #22ccaa;
+        margin: 0px 1px;
+        float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003128}}
+    #skills .column .entry .name {
+      height: 1.1em;
+      margin: 0px 4px;
+      float: left; }
+
 @media screen and (max-width: 980px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003142}}
   .card {
     margin-top: 100px;
     float: right; } }
 @media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003149}}
   body {
     font-size: 12px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003152}}
   #centra {
     border: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003155}}
   .skillpill {
     border-bottom: 2pt solid black;
     border-radius: 0pt; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003159}}
   .section {
     page-break-inside: avoid; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003162}}
   .card {
     margin-top: 0.3in;
     max-width: 3in; } }
