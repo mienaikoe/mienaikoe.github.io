@@ -1,235 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-		
-                <link rel="stylesheet" href="fonts/gudea/stylesheet.css"></link>
-                <link rel="stylesheet" href="fonts/kiroregular/stylesheet.css"></link>
-		<link rel="stylesheet" href="index.css"></link>
-		
-		
-		<script type="text/javascript">		
-			var skills = {
-				very_familiar: [
-					"JavaScript/JQuery",
-					"Ruby/Rails",
-					"Java",
-					"MySQL & Oracle Databases",
-					"HTML/CSS",
-                                        "Web Audio API"
-				],
-				moderately_familiar: [
-					"AngularJS",
-                                        "BackboneJS",
-                                        "Android",
-					"Redis",
-                                        "Apache Server",
-					"Three.js",
-					"PHP",
-					"PostgreSQL",
-					"C++",
-					"Python"
-				]
-			};
-			
-			
-			String.prototype.titlecase = function(){
-				capwords = [];
-				var words = this.split("_");
-				for( idx in words ){
-					var word = words[idx];
-					capwords.push( word.charAt(0).toUpperCase() + word.substr(1,word.length) );
-				}
-				return capwords.join(" ");
-			}
-			Number.prototype.times = function(fxn){
-				for( _i=0; _i<this; _i++ ){
-					fxn();
-				}
-			}
-			
-			function createSkillSet(key){
-				if( !skills[key] ){
-					throw new Error("Could not find skill set requested: "+key);
-				}
-			
-				var containerId = key+"_skills"
-				var container = document.getElementById(containerId);
-				if( !container ){
-					throw new Error("Could not find container with id "+containerId);
-				}
-				var heading = document.createElement("h3");
-				heading.innerHTML = key.titlecase();
-				container.appendChild(heading);
-				
-				// Hacky, but can't find anything to make CSS do it any other way
-				var stretcher = document.createElement("div");
-				stretcher.className = "stretcher";
-				(100).times(function(){
-					stretcher.innerHTML += "&nbsp; ";
-				});
-				container.appendChild(stretcher);
-				
-				var skillSet = document.createElement("div");
-				skillSet.className = "skillSet";
-				container.appendChild(skillSet);
-				
-				skills[key].forEach(function(skillName){
-					var skill = document.createElement("div");
-					skill.className = "skillpill";
-					skill.innerHTML = skillName;
-					skillSet.appendChild(skill);
-				}, this);
-			}
-			
-			document.addEventListener( "DOMContentLoaded", function(){
-				document.removeEventListener( "DOMContentLoaded", arguments.callee, false );
-				for( key in skills ){
-					createSkillSet(key);
-				}
-			}, false );
-			
-		</script>
-	</head>
-	<body>
-		<div id="full">
-			<div id="centra">
-				<div class="headlines">
-					<h1>Jesse T Lee</h1>
-					<a class="contact" href="http://www.linkedin.com/pub/jesse-lee/36/789/328/" target="_blank">	
-						<img src="icons/linkedin.ico"/>
-						<span>@mienaikoe</span>
-					</a>
-					<a class="contact" href="https://github.com/mienaikoe" target="_blank">	
-						<img src="icons/github.ico"/>
-						<span>@mienaikoe</span>
-					</a>
-					<a class="contact" href="http://www.soundcloud.com/mienai-koe" target="_blank">	
-						<img src="icons/soundcloud.ico"/>
-						<span>Mienai Koe</span>
-					</a>
-					<a class="contact" href="mailto:mienaikoe@gmail.com">
-                                                <img src="icons/gmail.ico"/>
-                                                <span>mienaikoe@gmail.com</span>
-					</a>
-					<a class="contact" href="tel:646-288-9960">
-						<img src="icons/phone.ico"/>
-						<span>646-288-9960</span>
-					</a>
-				</div>
-			
-				<div class="section">
-					<h2>Skills</h2>
-					<div id="very_familiar_skills" class="skill card">
-					</div>
-					<div class="ditch">
-					</div>
-					<div id="moderately_familiar_skills" class="skill card">
-					</div>
-				</div>
-				
-				<div class="section">
-					<h2>Experience</h2>
-					<div class="experience card">
-						<h3>Bloomberg LP</h3>
-						<div class="role">Web Developer</div>
-						<div class="time">2010 - Present</div>
-						<div class="place">New York, NY</div>
-						<ul class="points">
-							<li>Replaced and maintained critical services for Bloomberg's legal research web application.</li>
-							<li>Coordinated work amongst small team of developers</li>
-							<li>Picked up Ruby/Rails, and Java/Spring on the job.</li>
-							<li>Learned C++ and computer science concepts during 15-week intensive introductory course.</li>
-						</ul>
-					</div>
-					<div class="ditch"></div>
-					<div class="experience card">
-						<h3>Goodrich, Inc.</h3>
-						<div class="role">Engineering Intern</div>
-						<div class="time">2008 - 2010</div>
-						<div class="place">Brecksville, OH</div>
-						<ul>
-							<li>Machined carbon composite parts for thermal and electrical testing</li>
-							<li>Measured micro-hardness of carbon composite materials using an atomic force microscope</li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="section">
-					<h2>Education</h2>
-					<div class="education card">
-						<h3>Case Western Reserve University</h3>
-						<div class="role">Mechanical Engineering Undergrad</div>
-						<div class="time">2006 - 2010</div>
-						<div class="place">Cleveland, OH</div>
-						<ul>
-							<li>Co-led a team of student engineers in a farm irrigation project and a solar furnace project.</li>
-							<li>Was involved with several university musical groups, and composed electronic music in spare time.</li>
-						</ul>
-					</div>			
-					<div class="ditch"></div>
-					<div class="education card">
-						<h3>Dublin Scioto High School</h3>
-						<div class="role">Student</div>
-						<div class="time">2002-2006</div>
-						<div class="place">Dublin, OH</div>
-						<ul>
-							<li>Was a member of Marching Band, Jazz Band, and Theatre Orchestra</li>
-							<li>Worked with Cisco routers and switches in an independent learning class</li>
-						</ul>
-					</div>
-				</div>			
-		
-		
-				<div class="section">
-					<h2>Projects</h2>
-                                        <div class="projects card">
-						<h3>ReMap</h3>
-						<div class="role">Developer</div>
-						<div class="time">November 2014 - Present</div>
-						<div class="place"><a href="http://challengepost.com/software/remap-jwsua">http://challengepost.com/software/remap-jwsua</a></div>
-						<ul class="points">
-							<li>Worked with a small team of designers and developers to create a new interactive NYC subway map.</li>
-							<li>Parsed and manually rendered an SVG map with gestures for panning and zooming.</li>
-                                                        <li>Learned online about the Android environment, Bluetooth Technology, and 2d Graphics.</li>
-						</ul>
-					</div>
-                                        <div class="ditch"></div>
-                                        <div class="projects card">
-						<h3>Cosmos</h3>
-						<div class="role">Developer</div>
-						<div class="time">Hack The Universe 2014</div>
-						<div class="place"><a href="http://hacktheuniverse.github.io/cosmos">http://hacktheuniverse.github.io/cosmos</a></div>
-						<ul class="points">
-							<li>Wrote a Ruby parsing script for position and magnitude data of 100,000+ stars.</li>
-							<li>Used WebGL shaders to render a realistic look and behavior of flying through hundred and thousands of stars.</li>
-						</ul>
-					</div>
-                                        <div class="clearfix"></div>
-					<div class="projects card">
-						<h3>Nodea Studio</h3>
-						<div class="role">Creator & Developer</div>
-						<div class="time">2013 - Present</div>
-						<div class="place"><a href="http://mienaikoe.github.io/nodea">http://mienaikoe.github.io/nodea</a></div>
-						<ul class="points">
-							<li>Used Web Audio API and JavaScript with jQuery to make a computer-keyboard-based sound controller.</li>
-							<li>Combined sound controller with pure JavaScript layer to make a functional digital audio workstation for the web.</li>
-						</ul>
-					</div>
-					<div class="ditch"></div>
-					<div class="projects card">
-						<h3>Karen Gioia Photography</h3>
-						<div class="role">Sole Developer</div>
-						<div class="time">2013</div>
-						<div class="place"><a href="http://www.karengioia.com">http://www.karengioia.com</a></div>
-						<ul class="points">
-							<li>Worked with photographer's design specs to deliver a photography portfolio site with an album management system in PHP</li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</body>
+    <head>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+        <link rel="stylesheet" href="fonts/kiroregular/stylesheet.css"></link>
+        <link rel="stylesheet" href="css/index.css"></link>
+
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+
+
+    <body>        
+        <div id="paper">
+            <div id="contacts">
+                <div class="contact linkedin"></div>
+                <div class="contact github"></div>
+                <div class="contact soundcloud"></div>
+                <div class="contact email"></div>
+                <div class="contact phone"></div>
+            </div>
+            
+            <div id="brand">
+                <h1>Jesse</h1>
+                <h1>Lee</h1>
+                <div class="lead"></div>
+                <p>Full-Stack Developer</p>
+                <p>& Musician</p>
+            </div>
+            
+            <div id="skills" class="section">
+                <h2>Skill Set</h2>
+            </div>
+            
+            <div id="experience" class="section">
+                <h2>Education & Experience</h2>
+            </div>
+            
+            <div id="projects" class="section">
+                <h2>Projects</h2>
+            </div>
+            
+        </div>
+    </body>
 
 </html>

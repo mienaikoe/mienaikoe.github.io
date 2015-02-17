@@ -1,0 +1,135 @@
+// Variables
+
+$trim:#22CCAA;
+$contact_trim:#FFFFFF;
+
+$contact_dimension:32px;
+
+
+// Top-Level
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    font-family: kiroregular;
+}
+
+#paper{
+    background-color: white;
+    max-width: 800px;
+    padding: 80px 80px 80px 100px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    box-shadow: 0px 0px 15px #333;
+    margin: 0px auto;
+    position: relative; //for the fixeds
+}
+
+
+
+// Headings
+
+h1{
+    font-size: 3.3em;
+    line-height: 0.8em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.7em;
+    line-height: 2.0em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 1.2em;
+    line-height: 1.3em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+
+
+// Special Sections
+
+#contacts{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: $contact_dimension;
+    .contact{
+        width: $contact_dimension;
+        height: $contact_dimension;
+        background-color: $trim;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            color: $trim;
+            background-color: #FFFFFF;
+        }
+    }
+}
+
+#brand{
+    margin-bottom: 24px;
+    text-align: right;
+    .lead{
+        height: 0.3em;
+        width: 1em;
+    }
+    p{
+        font-size: 0.75em;
+        line-height: 1em;
+        margin: 0;
+    }
+}
+
+
+
+// Content Sections
+
+.section{
+    margin-bottom: 30px;
+}
+
+#skills{
+    
+}
+
+
+
+
+
+@media screen and (max-width: 980px) {
+    .card{
+        margin-top: 100px;
+        float: right;
+    }
+}
+
+@media print{
+    body{
+        font-size: 12px;
+    }
+    #centra{
+        border: 0;
+    }
+    .skillpill{
+        border-bottom: 2pt solid black;
+        border-radius: 0pt;
+    }
+    .section{
+        page-break-inside: avoid;
+    }
+    .card{
+        margin-top: 0.3in;
+        max-width: 3in;
+    }
+}
