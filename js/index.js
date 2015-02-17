@@ -1,27 +1,3 @@
-var skills = {
-	very_familiar: [
-		"JavaScript/JQuery",
-		"Ruby/Rails",
-		"Java",
-		"MySQL & Oracle Databases",
-		"HTML/CSS",
-		"Web Audio API"
-	],
-	moderately_familiar: [
-		"AngularJS",
-		"BackboneJS",
-		"Android",
-		"Redis",
-		"Apache Server",
-		"Three.js",
-		"PHP",
-		"PostgreSQL",
-		"C++",
-		"Python"
-	]
-};
-
-
 String.prototype.titlecase = function() {
 	capwords = [];
 	var words = this.split("_");
@@ -36,3 +12,104 @@ Number.prototype.times = function(fxn) {
 		fxn();
 	}
 };
+
+
+
+var skillSets = [
+	{
+		title: "Languages",
+		entries: [
+			{ name: "JavaScript", rating: 4 },
+			{ name: "Ruby", rating: 4 },
+			{ name: "Java", rating: 4 },
+			{ name: "Python", rating: 2 },
+			{ name: "PHP", rating: 2 }
+		]
+	},
+	
+	{
+		title: "Frameworks",
+		entries: [
+			{ name: "Node.js", rating: 4 },
+			{ name: "Ruby on Rails", rating: 4 },
+			{ name: "Angular.js", rating: 3 },
+			{ name: "Google App Engine", rating: 2 }
+		]
+	},
+	
+	{
+		title: "Tools",
+		entries: [
+			{ name: "JQuery", rating: 4 },
+			{ name: "Backbone.js", rating: 3 },
+			{ name: "HTML5 Canvas", rating: 3 },
+			{ name: "Web Audio", rating: 3 },
+			{ name: "Three.js", rating: 3 },
+			{ name: "CSS3", rating: 2 },
+			{ name: "Apache Web Server", rating: 2 }
+		]
+	},
+	{
+		title: "Data Storage",
+		entries: [
+			{ name: "Redis", rating: 3 },
+			{ name: "Oracle Database", rating: 3 },
+			{ name: "MySQL", rating: 3 },
+			{ name: "PostgreSQL", rating: 2 }
+		]
+	},
+	{
+		title: "Android",
+		entries: [
+			{ name: "Canvas/Custom Views", rating: 3 },
+			{ name: "Bluetooth Low-Energy", rating: 2 },
+			{ name: "Wi-Fi Direct", rating: 2 }
+		]
+	},
+	{
+		title: "Product",
+		entries: [
+			{ name: "Agile/Scrum", rating: 3 },
+			{ name: "UX Interviewing", rating: 2 },
+			{ name: "Graphic Design", rating: 2 }
+		]
+	}
+];
+
+
+function initSkills(container){
+	for( var i in skillSets ){
+		var skillSet = skillSets[i];
+		
+		var columnDiv = $("<div/>",{
+			"class":"column"
+		}).appendTo(container);
+		
+		$("<h3/>",{
+			text: skillSet.title
+		}).appendTo(columnDiv);
+		
+		for( var j in skillSet.entries ){
+			var skill = skillSet.entries[j];
+			
+			var entryDiv = $("<div/>",{
+				"class":"entry"
+			}).appendTo(columnDiv);
+			
+			var ratingDiv = $("<div/>",{
+				"class": "rating"
+			}).appendTo(entryDiv);
+			
+			for( var k = 0; k < skill.rating; k++ ){
+				$("<div/>",{
+					"class":"bar"
+				}).appendTo(ratingDiv);
+			}
+			
+			$("<div/>",{
+				"class": "name",
+				"text": skill.name
+			}).appendTo(entryDiv);
+		}
+	}
+}
