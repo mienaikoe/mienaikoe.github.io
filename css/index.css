@@ -82,8 +82,8 @@ h3 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003110}}
 #skills .column {
-  width: 197px;
-  margin-top: 20px;
+  width: 172px;
+  margin: 20px 12px 0px;
   display: inline-block; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003114}}
   #skills .column .entry {

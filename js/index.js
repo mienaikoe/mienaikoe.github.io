@@ -30,10 +30,11 @@ var skillSets = [
 	{
 		title: "Frameworks",
 		entries: [
-			{ name: "Node.js", rating: 4 },
 			{ name: "Ruby on Rails", rating: 4 },
-			{ name: "Angular.js", rating: 3 },
-			{ name: "Google App Engine", rating: 2 }
+			{ name: "Node.js", rating: 2 },
+			{ name: "Google App Engine", rating: 2 },
+			{ name: "Spring", rating: 1 },
+			{ name: "Angular.js", rating: 1 },
 		]
 	},
 	
@@ -42,10 +43,9 @@ var skillSets = [
 		entries: [
 			{ name: "JQuery", rating: 4 },
 			{ name: "Backbone.js", rating: 3 },
-			{ name: "HTML5 Canvas", rating: 3 },
 			{ name: "Web Audio", rating: 3 },
 			{ name: "Three.js", rating: 3 },
-			{ name: "CSS3", rating: 2 },
+			{ name: "HTML5 Canvas", rating: 2 },
 			{ name: "Apache Web Server", rating: 2 }
 		]
 	},
@@ -71,7 +71,7 @@ var skillSets = [
 		entries: [
 			{ name: "Agile/Scrum", rating: 3 },
 			{ name: "UX Interviewing", rating: 2 },
-			{ name: "Graphic Design", rating: 2 }
+			{ name: "Graphic Design", rating: 1 }
 		]
 	}
 ];

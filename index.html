@@ -8,7 +8,28 @@
         <link rel="stylesheet" href="fonts/kiroregular/stylesheet.css"/>
         <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="css/index.css"/>
-
+	<style class="stopgap please replace"> 
+		.project{
+			width: 240px;
+			margin: 12px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.alignment-right{
+			text-align: right;
+		}
+		.project img{
+			width: 100%;
+		}
+		.technology{
+			color: #fff;
+			background-color: #4A1;
+			margin: 4px 8px 4px 0px;
+			padding: 2px 4px;
+			display: inline-block;
+			font-size: 0.8em;
+		}
+	</style>
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </head>
@@ -47,6 +68,42 @@
             
             <div id="projects" class="section">
                 <h2>Projects</h2>
+		<div class="project">
+			<h3 class="alignment-right">ReMap</h3>
+			<img src="images/remap.png"/>
+			<p>Collaborated with a team of developers to create an Android app for the MTA's AppQuest Challenge</p>
+			<p>Implemented Zoom and Pan Gestures on a map rendered from manually-parsed SVG</p>
+			<p>Investigated options and proposed a solution for a rudimentary cross-platform meshnet with mobile phones.</p>
+			<p>
+				<span class="technology">Vector Graphics</span>
+				<span class="technology">Touchscreen Gestures</span>
+				<span class="technology">Bluetooth Low-Energy</span>
+			</p>
+		</div>
+		<div class="project">
+			<h3 class="alignment-right">Cosmos</h3>
+			<img src="images/cosmos.png"/>
+			<p>Managed the memory and cpu footprint of 100,000 stars in a 3d space by using WebGL shaders to render them</p> 
+			<p>Quickly learned how to work with 3D graphics with Three.js</p>
+			<p>Created a B-V Color to RGB Color Ruby method for use in parsing star data</p>
+			<p>
+				<span class="technology">Three.js</span>
+				<span class="technology">WebGL</span>
+				<span class="technology">Ruby Scripting</span>
+			</p>
+		</div>
+		<div class="project">
+			<h3 class="alignment-right">Nodea Studio</h3>
+			<img src="images/nodea.png"/>
+			<p>Created a web application for creating and editing music using only your laptop or tablet</p>
+			<p>Discovered the complexities of digital audio workstations through experimenting with my own web application</p>
+			<p>Developed a sense for organizing Object-Oriented Raw Javascript and learned how to use some of the new APIs of modern browsers</p>
+			<p>
+				<span class="technology">Web Audio API</span>
+				<span class="technology">Object-Oriented Javascript</span>
+			</p>
+		</div>
+    
             </div>
             
         </div>
