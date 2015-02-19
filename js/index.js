@@ -13,6 +13,39 @@ Number.prototype.times = function(fxn) {
 	}
 };
 
+// Sticker Headers - Needs More Work
+/*
+$(document).ready(function(){
+	var headers = $("h2");
+	var stuckHeader = null;
+	var stickyHeader = $("#stickyHeader");
+	var stickyPaper = stickyHeader.find(".paper");
+	
+	$(document).scroll(function(ev){
+		var scrollTop = $(window).scrollTop();
+		var bestHeader = null;
+		var bestDiff = -100000;
+		headers.each(function(_i, header){
+			if( header === stuckHeader ){
+				return;
+			}
+			var hOffset = $(header).offset();
+			var hDiff = hOffset.top - scrollTop;
+			if( hDiff < 0 && hDiff > bestDiff ){
+				bestHeader = $(header);
+				bestDiff = hDiff;
+			}
+		});
+		if( bestHeader !== null ){
+			stickyPaper.text(bestHeader.text());
+			stickyHeader.show();
+		} else {
+			stickyHeader.hide();
+		}
+	});
+});
+*/
+
 
 
 var skillSets = [
@@ -34,7 +67,7 @@ var skillSets = [
 			{ name: "Node.js", rating: 2 },
 			{ name: "Google App Engine", rating: 2 },
 			{ name: "Spring", rating: 1 },
-			{ name: "Angular.js", rating: 1 },
+			{ name: "Angular.js", rating: 1 }
 		]
 	},
 	

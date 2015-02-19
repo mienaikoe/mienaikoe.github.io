@@ -4,6 +4,7 @@ $trim:#22CCAA;
 $contact_trim:#FFFFFF;
 
 $contact_dimension:48px;
+$column_dimension: 240px;
 
 
 // Top-Level
@@ -11,19 +12,20 @@ $contact_dimension:48px;
 body {
     margin: 0;
     padding: 0;
-    background-color: #ccc;
+    //background-color: #ccc;
     font-family: kiroregular;
 }
 
-#paper{
+.paper{
     background-color: white;
     max-width: 800px;
     padding: 80px 80px 80px 100px;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    box-shadow: 0px 0px 15px #333;
+    //border-right: 1px solid black;
+    //border-left: 1px solid black;
+    //box-shadow: 0px 0px 15px #333;
     margin: 0px auto;
-    position: relative; //for the fixeds
+    position: relative; //for the absolutes
+    overflow: hidden;
 }
 
 
@@ -36,6 +38,7 @@ h1{
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
+    clear: both;
 }
 
 h2{
@@ -44,6 +47,8 @@ h2{
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
+    clear: both;
+    text-align: left;
 }
 
 h3{
@@ -52,6 +57,20 @@ h3{
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
+    clear: both;
+    text-align: left;
+}
+
+#stickyHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    .paper{
+        padding: 0px 80px 0px 100px;
+        box-shadow: none;
+    }
 }
 
 .alignment-right{
@@ -62,55 +81,57 @@ h3{
 
 // Special Sections
 
-#contacts{
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    width: $contact_dimension;
-    .contactRow{
-        position:relative;
-        height: $contact_dimension;
-        display: block;
-        .contact{
-            width: $contact_dimension;
+@media screen{
+    #contacts{
+        position: fixed;
+        top: 100px;
+        left: 0px;
+        width: $contact_dimension;
+        .contactRow{
+            position:relative;
             height: $contact_dimension;
-            line-height: $contact_dimension;
-            font-size: 18px;
-            text-align: center;
-            background-color: $trim;
-            color: #FFFFFF;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: absolute;
-            top:0;
-            left:0;
-        }
-        .contact_link{
-            width: 0;
-            position: absolute;
-            top:0;
-            left: $contact_dimension;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            height: 48px;
-            line-height: 48px;
-            background-color: white;
-            color: $trim;
-        }
-        &:hover, .locked{
-            & > .contact{
-                color: $trim;
-                background-color: #FFFFFF;
+            display: block;
+            .contact{
+                width: $contact_dimension;
+                height: $contact_dimension;
+                line-height: $contact_dimension;
+                font-size: 18px;
+                text-align: center;
+                background-color: $trim;
+                color: #FFFFFF;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                position: absolute;
+                top:0;
+                left:0;
             }
-            & > .contact_link{
-                width: 160px;
-                padding: 0px 16px;
-                border-right: 3px solid $trim;
+            .contact_link{
+                width: 0;
+                position: absolute;
+                top:0;
+                left: $contact_dimension;
+                overflow: hidden;
+                transition: all 0.3s ease;
+                height: $contact_dimension;
+                line-height: $contact_dimension;
+                background-color: white;
+                color: $trim;
+            }
+            &:hover, .locked{
+                & > .contact{
+                    color: $trim;
+                    background-color: #FFFFFF;
+                }
+                & > .contact_link{
+                    width: 160px;
+                    padding: 0px 16px;
+                    border-right: 3px solid $trim;
+                }
             }
         }
     }
-
 }
+
 
 #brand{
     margin-bottom: 24px;
@@ -132,6 +153,7 @@ h3{
 
 .section{
     margin-bottom: 30px;
+    text-align: right;
 }
 
 
@@ -139,7 +161,7 @@ $skill_entry_height:1.1em;
 
 #skills{
     .column{
-        width: 172px;
+        width: $column_dimension;
         margin: 20px 12px 0px;
         display:inline-block;
         .entry{
@@ -170,13 +192,17 @@ $skill_entry_height:1.1em;
 
 
 .project{
-    width: 240px;
+    width: $column_dimension;
     margin: 12px;
     display: inline-block;
     vertical-align: top;
-    
+    text-align: left;
+
     img{
         width: 100%;
+    }
+    .metadata{
+        font-style: italic;
     }
     .technology{
         color: #fff;
@@ -194,30 +220,53 @@ $skill_entry_height:1.1em;
 
 
 
-
 @media screen and (max-width: 980px) {
-    .card{
-        margin-top: 100px;
-        float: right;
-    }
+
 }
 
 @media print{
-    body{
-        font-size: 12px;
-    }
-    #centra{
+    // Standard is 670px
+    .paper{
         border: 0;
+        padding: 0;
     }
-    .skillpill{
-        border-bottom: 2pt solid black;
-        border-radius: 0pt;
-    }
+    
     .section{
         page-break-inside: avoid;
+        //page-break-after: always;
+        text-align: left;
+        margin-top: 48px;
     }
-    .card{
-        margin-top: 0.3in;
-        max-width: 3in;
+    #skills .column{
+        width: 200px;
+        margin: 8px;
+    }
+    .project{
+        width: 200px;
+        font-size: 12px;
+    }
+    
+    $print_dimension: 24px;
+    #contacts{
+        position: absolute;
+        top: 0;
+        .contactRow{
+            height: $print_dimension;
+            display: block;
+            .contact{
+                position: relative;
+                display: inline-block;
+                width: $print_dimension;
+                text-align: center;
+            }
+            .contact_link{
+                position: relative;
+                display: inline-block;
+                width: 160px;
+                height: $print_dimension;
+                line-height: $print_dimension;
+                font-size: 12px;
+            }
+        }
     }
 }
