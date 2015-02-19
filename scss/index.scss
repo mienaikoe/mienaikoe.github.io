@@ -54,6 +54,9 @@ h3{
     text-transform: uppercase;
 }
 
+.alignment-right{
+    text-align: right;
+}
 
 
 
@@ -64,21 +67,49 @@ h3{
     top: 100px;
     left: 0px;
     width: $contact_dimension;
-    .contact{
-        width: $contact_dimension;
+    .contactRow{
+        position:relative;
         height: $contact_dimension;
-        line-height: $contact_dimension;
-        font-size: 18px;
-        text-align: center;
-        background-color: $trim;
-        color: #FFFFFF;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        &:hover{
+        display: block;
+        .contact{
+            width: $contact_dimension;
+            height: $contact_dimension;
+            line-height: $contact_dimension;
+            font-size: 18px;
+            text-align: center;
+            background-color: $trim;
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .contact_link{
+            width: 0;
+            position: absolute;
+            top:0;
+            left: $contact_dimension;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 48px;
+            line-height: 48px;
+            background-color: white;
             color: $trim;
-            background-color: #FFFFFF;
+        }
+        &:hover, .locked{
+            & > .contact{
+                color: $trim;
+                background-color: #FFFFFF;
+            }
+            & > .contact_link{
+                width: 160px;
+                padding: 0px 16px;
+                border-right: 3px solid $trim;
+            }
         }
     }
+
 }
 
 #brand{
@@ -135,6 +166,30 @@ $skill_entry_height:1.1em;
         }
     }
 }
+
+
+
+.project{
+    width: 240px;
+    margin: 12px;
+    display: inline-block;
+    vertical-align: top;
+    
+    img{
+        width: 100%;
+    }
+    .technology{
+        color: #fff;
+        background-color: $trim;
+        margin: 4px 8px 4px 0px;
+        padding: 2px 4px;
+        display: inline-block;
+        font-size: 0.8em;
+    }
+}
+
+
+
 
 
 

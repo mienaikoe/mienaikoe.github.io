@@ -8,28 +8,7 @@
         <link rel="stylesheet" href="fonts/kiroregular/stylesheet.css"/>
         <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="css/index.css"/>
-	<style class="stopgap please replace"> 
-		.project{
-			width: 240px;
-			margin: 12px;
-			display: inline-block;
-			vertical-align: top;
-		}
-		.alignment-right{
-			text-align: right;
-		}
-		.project img{
-			width: 100%;
-		}
-		.technology{
-			color: #fff;
-			background-color: #4A1;
-			margin: 4px 8px 4px 0px;
-			padding: 2px 4px;
-			display: inline-block;
-			font-size: 0.8em;
-		}
-	</style>
+        
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </head>
@@ -38,11 +17,44 @@
     <body>        
         <div id="paper">
             <div id="contacts">
-                <a class="contact fa fa-linkedin"></a>
-                <a class="contact fa fa-github"></a>
-                <a class="contact fa fa-soundcloud"></a>
-                <a class="contact fa fa-envelope" href="mailto:mienaikoe@gmail.com" title="mienaikoe@gmail.com"></a>
-                <a class="contact fa fa-phone"></a>
+                <a class="contactRow" 
+                   href="https://www.linkedin.com/pub/jesse-lee/36/789/328" 
+                   target="_blank">
+                    <div class="contact fa fa-linkedin"></div>
+                    <div class="contact_link" >
+                        Jesse Lee on LinkedIn
+                    </div>
+                </a>
+                <a class="contactRow" 
+                   href="http://www.github.com/mienaikoe" 
+                   target="_blank">
+                    <div class="contact fa fa-github"></div>
+                    <div class="contact_link">
+                        mienaikoe
+                    </div>
+                </a>
+                <a class="contactRow"
+                   href="https://soundcloud.com/mienai-koe" 
+                   target="_blank">
+                    <div class="contact fa fa-soundcloud"></div>
+                    <div class="contact_link">
+                        Mienai Koe
+                    </div>
+                </a>
+                <a class="contactRow"
+                   href="mailto:mienaikoe@gmail.com">
+                    <div class="contact fa fa-envelope"></div>
+                    <div class="contact_link">
+                        mienaikoe@gmail.com
+                    </div>
+                </a>
+                <a class="contactRow"
+                   href="tel:646-588-9960">
+                    <div class="contact fa fa-phone"></div>
+                    <div class="contact_link">
+                        646-588-9960
+                    </div>
+                </a>
             </div>
             
             <div id="brand">
@@ -70,7 +82,9 @@
                 <h2>Projects</h2>
 		<div class="project">
 			<h3 class="alignment-right">ReMap</h3>
-			<img src="images/remap.png"/>
+                        <a href="http://challengepost.com/software/remap-jwsua" target="_blank">
+                            <img src="images/remap.png"/>
+                        </a>
 			<p>Collaborated with a team of developers to create an Android app for the MTA's AppQuest Challenge</p>
 			<p>Implemented Zoom and Pan Gestures on a map rendered from manually-parsed SVG</p>
 			<p>Investigated options and proposed a solution for a rudimentary cross-platform meshnet with mobile phones.</p>
@@ -82,7 +96,9 @@
 		</div>
 		<div class="project">
 			<h3 class="alignment-right">Cosmos</h3>
-			<img src="images/cosmos.png"/>
+                        <a href="https://hacktheuniverse.github.io/cosmos" target="_blank">
+                            <img src="images/cosmos.png"/>
+                        </a>
 			<p>Managed the memory and cpu footprint of 100,000 stars in a 3d space by using WebGL shaders to render them</p> 
 			<p>Quickly learned how to work with 3D graphics with Three.js</p>
 			<p>Created a B-V Color to RGB Color Ruby method for use in parsing star data</p>
@@ -94,7 +110,9 @@
 		</div>
 		<div class="project">
 			<h3 class="alignment-right">Nodea Studio</h3>
-			<img src="images/nodea.png"/>
+                        <a href="https://mienaikoe.github.io/nodea" target="_blank">
+                            <img src="images/nodea.png"/>
+                        </a>
 			<p>Created a web application for creating and editing music using only your laptop or tablet</p>
 			<p>Discovered the complexities of digital audio workstations through experimenting with my own web application</p>
 			<p>Developed a sense for organizing Object-Oriented Raw Javascript and learned how to use some of the new APIs of modern browsers</p>
