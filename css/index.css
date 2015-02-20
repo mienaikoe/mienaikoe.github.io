@@ -121,7 +121,7 @@ h3 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003154}}
 .section {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   text-align: right; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003163}}
@@ -155,7 +155,7 @@ h3 {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003194}}
 .project {
   width: 240px;
-  margin: 12px;
+  margin: 20px 12px 0px;
   display: inline-block;
   vertical-align: top;
   text-align: left; }
