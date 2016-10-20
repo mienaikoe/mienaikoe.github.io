@@ -52,9 +52,10 @@ var skillSets = [
 	{
 		title: "Languages",
 		entries: [
-			{ name: "JavaScript", rating: 4 },
-			{ name: "Ruby", rating: 4 },
-			{ name: "Java", rating: 4 },
+			{ name: "JavaScript", rating: 5 },
+			{ name: "Ruby", rating: 3 },
+			{ name: "Java", rating: 3 },
+			{ name: "Scala", rating: 2 },
 			{ name: "Python", rating: 2 },
 			{ name: "PHP", rating: 2 }
 		]
@@ -63,8 +64,10 @@ var skillSets = [
 	{
 		title: "Frameworks",
 		entries: [
-			{ name: "Ruby on Rails", rating: 4 },
-			{ name: "Node/Express", rating: 3 },
+			{ name: "React", rating: 4 },
+			{ name: "Node/Express", rating: 4 },
+			{ name: "Play Framework", rating: 3 },
+			{ name: "Ruby on Rails", rating: 2 },
 			{ name: "Google App Engine", rating: 2 },
 			{ name: "Spring", rating: 1 },
 			{ name: "Angular.js", rating: 1 }
@@ -74,22 +77,20 @@ var skillSets = [
 	{
 		title: "Tools",
 		entries: [
-			{ name: "JQuery", rating: 4 },
-			{ name: "Web Audio", rating: 4 },
-			{ name: "React", rating: 3 },
+			{ name: "JQuery", rating: 3 },
+			{ name: "Web Audio", rating: 3 },
 			{ name: "Backbone.js", rating: 3 },
 			{ name: "Three.js", rating: 2 },
-			{ name: "HTML5 Canvas", rating: 2 },
-			{ name: "Apache Web Server", rating: 2 }
+			{ name: "HTML5 Canvas", rating: 2 }
 		]
 	},
 	{
 		title: "Data Storage",
 		entries: [
-			{ name: "Redis", rating: 3 },
 			{ name: "Oracle Database", rating: 3 },
-			{ name: "MySQL", rating: 3 },
-			{ name: "PostgreSQL", rating: 2 }
+			{ name: "PostgreSQL", rating: 3 },
+			{ name: "Redis", rating: 2 },
+			{ name: "MySQL", rating: 2 }
 		]
 	},
 	{
