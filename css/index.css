@@ -34,7 +34,7 @@ h2 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000354}}
 h3 {
-  font-size: 1.0em;
+  font-size: 1.1em;
   line-height: 1.4em;
   font-weight: bold;
   margin: 0;
@@ -138,7 +138,7 @@ h3 {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003172}}
     #skills .column .entry .rating {
       height: 1.1em;
-      width: 28px;
+      width: 35px;
       float: left; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003176}}
       #skills .column .entry .rating .bar {
@@ -155,7 +155,7 @@ h3 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003195}}
 .project {
-  width: 240px;
+  width: 360px;
   margin: 20px 12px 0px;
   display: inline-block;
   vertical-align: top;
