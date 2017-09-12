@@ -53,9 +53,9 @@ var skillSets = [
 		title: "Languages",
 		entries: [
 			{ name: "JavaScript", rating: 5 },
-			{ name: "Ruby", rating: 3 },
 			{ name: "Java", rating: 3 },
-			{ name: "Scala", rating: 2 },
+			{ name: "Scala", rating: 3 },
+			{ name: "Ruby", rating: 2 },
 			{ name: "Python", rating: 2 },
 			{ name: "PHP", rating: 2 }
 		]
@@ -65,48 +65,38 @@ var skillSets = [
 		title: "Frameworks",
 		entries: [
 			{ name: "React", rating: 4 },
+			{ name: "React Native", rating: 4 },
 			{ name: "Node/Express", rating: 4 },
 			{ name: "Play Framework", rating: 3 },
 			{ name: "Ruby on Rails", rating: 2 },
-			{ name: "Google App Engine", rating: 2 },
-			{ name: "Spring", rating: 1 },
-			{ name: "Angular.js", rating: 1 }
-		]
-	},
-	
-	{
-		title: "Tools",
-		entries: [
-			{ name: "JQuery", rating: 3 },
-			{ name: "Web Audio", rating: 3 },
-			{ name: "Backbone.js", rating: 3 },
-			{ name: "Three.js", rating: 2 },
-			{ name: "HTML5 Canvas", rating: 2 }
 		]
 	},
 	{
-		title: "Data Storage",
+		title: "Storage & Devops",
 		entries: [
-			{ name: "Oracle Database", rating: 3 },
-			{ name: "PostgreSQL", rating: 3 },
-			{ name: "Redis", rating: 2 },
-			{ name: "MySQL", rating: 2 }
+			{ name: "PostgreSQL", rating: 4 },
+			{ name: "Google Cloud", rating: 3 },
+			{ name: "Redis", rating: 3 },
+			{ name: "Docker/Kubernetes", rating: 2 },
+			{ name: "Load Balancing/CDNs", rating: 2 },
 		]
 	},
 	{
-		title: "Android",
+		title: "Topics",
 		entries: [
-			{ name: "Canvas/Custom Views", rating: 3 },
-			{ name: "Bluetooth Low-Energy", rating: 2 },
-			{ name: "Wi-Fi Direct", rating: 2 }
+			{ name: "Geo & Maps", rating: 4 },
+			{ name: "Audio & Signals", rating: 4 },
+			{ name: "Graphics", rating: 2 },
+			{ name: "Linear Algebra", rating: 2 },
 		]
 	},
 	{
-		title: "Product",
+		title: "Product Concepts",
 		entries: [
+			{ name: "Release Cycles", rating: 3 },
 			{ name: "Agile/Scrum", rating: 3 },
-			{ name: "UX Interviewing", rating: 2 },
-			{ name: "Graphic Design", rating: 1 }
+			{ name: "UX Feedback Cycle", rating: 3 },
+			{ name: "Design", rating: 2 }
 		]
 	}
 ];
