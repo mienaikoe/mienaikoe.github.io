@@ -72,7 +72,7 @@ var skillSets = [
 		]
 	},
 	{
-		title: "Storage & Devops",
+		title: "DB & Devops",
 		entries: [
 			{ name: "PostgreSQL", rating: 4 },
 			{ name: "Google Cloud", rating: 3 },
@@ -82,7 +82,7 @@ var skillSets = [
 		]
 	},
 	{
-		title: "Topics",
+		title: "CS Topics",
 		entries: [
 			{ name: "Geo & Maps", rating: 4 },
 			{ name: "Audio & Signals", rating: 4 },
@@ -98,7 +98,15 @@ var skillSets = [
 			{ name: "UX Feedback Cycle", rating: 3 },
 			{ name: "Design", rating: 2 }
 		]
-	}
+	},{
+		title: "Hardware",
+		entries: [
+			{ name: "Circuit Design & Engineering", rating: 3 },
+			{ name: "Arduino", rating: 3 },
+			{ name: "Thermal and Fluid Mechanics", rating: 3 },
+			{ name: "Bluetooth Low-Energy", rating: 2 }
+		]
+	},
 ];
 
 
