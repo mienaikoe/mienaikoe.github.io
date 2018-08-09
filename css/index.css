@@ -1,221 +1,229 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000312}}
 body {
   margin: 0;
   padding: 0;
-  font-family: kiroregular; }
+  background-color: #ccc;
+  font-family: kiroregular;
+  font-size: 12px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000319}}
 .paper {
   background-color: white;
-  max-width: 800px;
-  padding: 80px 80px 80px 100px;
+  width: 8.5in;
+  height: 11in;
+  padding: 0.5in;
   margin: 0px auto;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0px 0px 20px black;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000335}}
+a {
+  color: #37F;
+}
+
 h1 {
-  font-size: 3.3em;
+  font-size: 3em;
   line-height: 0.8em;
   font-weight: bold;
   margin: 0;
-  text-transform: uppercase;
-  clear: both; }
+  clear: both;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000344}}
 h2 {
   font-size: 1.7em;
-  line-height: 2.0em;
   font-weight: bold;
-  margin: 0;
-  text-transform: uppercase;
+  margin: 0.1in 0 0;
   clear: both;
-  text-align: left; }
+  text-align: left;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000354}}
 h3 {
-  font-size: 1.1em;
-  line-height: 1.4em;
+  font-size: 1.2em;
+  line-height: 2em;
   font-weight: bold;
   margin: 0;
-  text-transform: uppercase;
   clear: both;
-  text-align: left; }
+  text-align: left;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000364}}
 #stickyHeader {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000370}}
-  #stickyHeader .paper {
-    padding: 0px 80px 0px 100px;
-    box-shadow: none; }
+  display: none;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000376}}
 .alignment-right {
-  text-align: right; }
+  text-align: right;
+}
 
 @media screen {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000385}}
   #contacts {
     position: fixed;
     top: 100px;
     left: 0px;
     width: 48px;
-    box-shadow: 0px 0px 5px black; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000391}}
-    #contacts .contactRow {
-      position: relative;
-      height: 48px;
-      display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\0000395}}
-      #contacts .contactRow .contact {
-        width: 48px;
-        height: 48px;
-        line-height: 48px;
-        font-size: 18px;
-        text-align: center;
-        background-color: #22ccaa;
-        color: #FFFFFF;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        position: absolute;
-        top: 0;
-        left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003109}}
-      #contacts .contactRow .contact_link {
-        width: 0;
-        position: absolute;
-        top: 0;
-        left: 48px;
-        overflow: hidden;
-        transition: all 0.3s ease;
-        height: 48px;
-        line-height: 48px;
-        background-color: white;
-        color: #22ccaa; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003122}}
-      #contacts .contactRow:hover > .contact, #contacts .contactRow .locked > .contact {
-        color: #22ccaa;
-        background-color: #FFFFFF; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003126}}
-      #contacts .contactRow:hover > .contact_link, #contacts .contactRow .locked > .contact_link {
-        width: 160px;
-        padding: 0px 16px;
-        border-right: 3px solid #22ccaa; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003137}}
+    box-shadow: 0px 0px 5px black;
+  }
+  #contacts .contactRow {
+    position: relative;
+    height: 48px;
+    display: block;
+  }
+  #contacts .contactRow .contact {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #22CCAA;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #contacts .contactRow .contact_link {
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 48px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 48px;
+    line-height: 48px;
+    background-color: white;
+    color: #22CCAA;
+  }
+  #contacts .contactRow:hover > .contact, #contacts .contactRow .locked > .contact {
+    color: #22CCAA;
+    background-color: #FFFFFF;
+  }
+  #contacts .contactRow:hover > .contact_link, #contacts .contactRow .locked > .contact_link {
+    width: 160px;
+    padding: 0px 16px;
+    border-right: 3px solid #22CCAA;
+  }
+}
 #brand {
   margin-bottom: 24px;
-  text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003140}}
-  #brand .lead {
-    height: 0.3em;
-    width: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003144}}
-  #brand p {
-    font-size: 0.75em;
-    line-height: 1em;
-    margin: 0; }
+  text-align: right;
+}
+#brand p {
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 0;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003155}}
 .section {
-  margin-bottom: 60px;
-  text-align: right; }
+  margin-bottom: 0.2in;
+  text-align: right;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003164}}
 #skills .column {
-  width: 240px;
-  margin: 20px 12px 0px;
-  display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003168}}
-  #skills .column .entry {
-    height: 1.4em;
-    line-height: 1.1em;
-    font-size: 0.8em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003172}}
-    #skills .column .entry .rating {
-      height: 1.1em;
-      width: 35px;
-      float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003176}}
-      #skills .column .entry .rating .bar {
-        height: 1.1em;
-        width: 5px;
-        background-color: #22ccaa;
-        margin: 0px 1px;
-        float: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003184}}
-    #skills .column .entry .name {
-      height: 1.1em;
-      margin: 0px 4px;
-      float: left; }
+  width: 2.5in;
+  margin: 12px 12px 0px;
+  display: inline-block;
+}
+#skills .column h3 {
+  margin-bottom: 0.2em;
+}
+#skills .column .entry {
+  height: 1.4em;
+  line-height: 1.1em;
+  font-size: 1em;
+}
+#skills .column .entry .rating {
+  height: 1.1em;
+  width: 35px;
+  float: left;
+}
+#skills .column .entry .rating .bar {
+  height: 1.1em;
+  width: 5px;
+  background-color: #22CCAA;
+  margin: 0px 1px;
+  float: right;
+}
+#skills .column .entry .name {
+  height: 1.1em;
+  margin: 0px 4px;
+  float: left;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003195}}
 .project {
-  width: 360px;
-  margin: 20px 12px 0px;
+  width: 2.5in;
+  margin: 12px 12px 0px;
   display: inline-block;
   vertical-align: top;
-  text-align: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003202}}
-  .project img {
-    width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003205}}
-  .project .metadata {
-    font-style: italic; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003208}}
-  .project .technology {
-    color: #fff;
-    background-color: #22ccaa;
-    margin: 4px 8px 4px 0px;
-    padding: 2px 4px;
-    display: inline-block;
-    font-size: 0.8em; }
+  text-align: left;
+}
+.project .image {
+  display: block;
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+.project p {
+  margin: 0.3em 0 0.3em 1.2em;
+  display: list-item;
+  list-item-type: square;
+}
+.project .metadata {
+  font-style: italic;
+}
+.project .technologies {
+  margin-left: 1em;
+}
+.project .technology {
+  color: #fff;
+  background-color: #22CCAA;
+  margin: 4px 8px 4px 0px;
+  padding: 2px 4px;
+  display: inline-block;
+  font-size: 0.8em;
+}
 
 @media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003230}}
+  body {
+    background-color: white;
+  }
+
   .paper {
     border: 0;
-    padding: 0; }
+    padding: 0;
+    box-shadow: none;
+  }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003235}}
   .section {
     page-break-inside: avoid;
-    text-align: left;
-    margin-top: 48px; }
+  }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003241}}
-  #skills .column {
-    width: 200px;
-    margin: 8px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003245}}
-  .project {
-    width: 200px;
-    font-size: 12px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003251}}
   #contacts {
     position: absolute;
-    top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003254}}
-    #contacts .contactRow {
-      height: 24px;
-      display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003257}}
-      #contacts .contactRow .contact {
-        position: relative;
-        display: inline-block;
-        width: 24px;
-        text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jesse\/Documents\/GitHub\/mienaikoe\.github\.io\/scss\/index\.scss}line{font-family:\00003263}}
-      #contacts .contactRow .contact_link {
-        position: relative;
-        display: inline-block;
-        width: 160px;
-        height: 24px;
-        line-height: 24px;
-        font-size: 12px; } }
+    top: 0;
+  }
+  #contacts .contactRow {
+    height: auto;
+    display: block;
+  }
+  #contacts .contactRow .contact {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+  }
+  #contacts .contactRow .contact_link {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: auto;
+    line-height: auto;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -4,7 +4,7 @@ $trim:#22CCAA;
 $contact_trim:#FFFFFF;
 
 $contact_dimension:48px;
-$column_dimension: 240px;
+$column_dimension: (8.5in - 1in) / 3;
 
 
 // Top-Level
@@ -12,20 +12,27 @@ $column_dimension: 240px;
 body {
     margin: 0;
     padding: 0;
-    //background-color: #ccc;
+    background-color: #ccc;
     font-family: kiroregular;
+    font-size: 12px;
 }
 
 .paper{
     background-color: white;
-    max-width: 800px;
-    padding: 80px 80px 80px 100px;
+    width: 8.5in;
+    height: 11in;
+    padding: .5in;
     //border-right: 1px solid black;
     //border-left: 1px solid black;
     //box-shadow: 0px 0px 15px #333;
     margin: 0px auto;
     position: relative; //for the absolutes
     overflow: hidden;
+    box-shadow: 0px 0px 20px black;
+}
+
+a{
+  color: #37F;
 }
 
 
@@ -33,30 +40,30 @@ body {
 // Headings
 
 h1{
-    font-size: 3.3em;
+    font-size: 3em;
     line-height: 0.8em;
     font-weight: bold;
     margin: 0;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     clear: both;
 }
 
 h2{
     font-size: 1.7em;
-    line-height: 2.0em;
+    //line-height: 1.8em;
     font-weight: bold;
-    margin: 0;
-    text-transform: uppercase;
+    margin: 0.1in 0 0;
+    //text-transform: uppercase;
     clear: both;
     text-align: left;
 }
 
 h3{
-    font-size: 1.0em;
-    line-height: 1.4em;
+    font-size: 1.2em;
+    line-height: 2em;
     font-weight: bold;
     margin: 0;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     clear: both;
     text-align: left;
 }
@@ -67,10 +74,6 @@ h3{
     left: 0;
     right: 0;
     display: none;
-    .paper{
-        padding: 0px 80px 0px 100px;
-        box-shadow: none;
-    }
 }
 
 .alignment-right{
@@ -137,13 +140,10 @@ h3{
 #brand{
     margin-bottom: 24px;
     text-align: right;
-    .lead{
-        height: 0.3em;
-        width: 1em;
-    }
+
     p{
-        font-size: 0.75em;
-        line-height: 1em;
+        font-size: 1em;
+        line-height: 1.2em;
         margin: 0;
     }
 }
@@ -153,25 +153,30 @@ h3{
 // Content Sections
 
 .section{
-    margin-bottom: 60px;
+    margin-bottom: 0.2in;
     text-align: right;
 }
 
 
-$skill_entry_height:1.1em;
+$skill_entry_height: 1.1em;
 
 #skills{
     .column{
         width: $column_dimension;
-        margin: 20px 12px 0px;
+        margin: 12px 12px 0px;
         display:inline-block;
+
+        h3{
+          margin-bottom: 0.2em;
+        }
+
         .entry{
             height: 1.4em;
             line-height: $skill_entry_height;
-            font-size: 0.8em;
+            font-size: 1em;
             .rating{
                 height: $skill_entry_height;
-                width: 28px;
+                width: 7px * 5;
                 float: left;
                 .bar{
                     height: $skill_entry_height;
@@ -194,16 +199,28 @@ $skill_entry_height:1.1em;
 
 .project{
     width: $column_dimension;
-    margin: 20px 12px 0px;
+    margin: 12px 12px 0px;
     display: inline-block;
     vertical-align: top;
     text-align: left;
 
-    img{
+    .image{
+      display: block;
         width: 100%;
+        height: 160px;
+        background-size: cover;
+        background-position: center;
+    }
+    p{
+      margin: 0.3em 0  0.3em 1.2em;
+      display: list-item;
+      list-item-type: square;
     }
     .metadata{
         font-style: italic;
+    }
+    .technologies{
+      margin-left: 1em;
     }
     .technology{
         color: #fff;
@@ -226,46 +243,36 @@ $skill_entry_height:1.1em;
 }
 
 @media print{
-    // Standard is 670px
+    body{
+      background-color: white;
+    }
     .paper{
         border: 0;
         padding: 0;
+        box-shadow: none;
     }
-    
     .section{
         page-break-inside: avoid;
-        //page-break-after: always;
-        text-align: left;
-        margin-top: 48px;
     }
-    #skills .column{
-        width: 200px;
-        margin: 8px;
-    }
-    .project{
-        width: 200px;
-        font-size: 12px;
-    }
-    
-    $print_dimension: 24px;
+
     #contacts{
         position: absolute;
         top: 0;
         .contactRow{
-            height: $print_dimension;
+            height: auto;
             display: block;
             .contact{
                 position: relative;
                 display: inline-block;
-                width: $print_dimension;
+                width: 24px;
                 text-align: center;
             }
             .contact_link{
                 position: relative;
                 display: inline-block;
                 width: 160px;
-                height: $print_dimension;
-                line-height: $print_dimension;
+                height: auto;
+                line-height: auto;
                 font-size: 12px;
             }
         }
