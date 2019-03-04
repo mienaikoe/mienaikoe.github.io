@@ -50,13 +50,42 @@ $(document).ready(function(){
 
 var skillSets = [
 	{
-		title: "Hardware Domain",
+		title: "Languages",
 		entries: [
-			{ name: "CAD (Autodesk, Solidworks)", rating: 3 },
-			{ name: "Circuit Analysis", rating: 3 },
-			{ name: "Arduino", rating: 2 },
-			{ name: "Linux on ARM", rating: 2 },
-			{ name: "Bluetooth Low-Energy", rating: 2 }
+			{ name: "JavaScript", rating: 5 },
+			{ name: "Java", rating: 3 },
+			{ name: "Scala", rating: 3 },
+			{ name: "Python", rating: 3 },
+			{ name: "Ruby", rating: 2 },
+		]
+	},
+
+	{
+		title: "Frameworks",
+		entries: [
+			{ name: "React/React Native", rating: 4 },
+			{ name: "Node+Express", rating: 4 },
+			{ name: "Play Framework", rating: 3 },
+			{ name: "Django", rating: 2 },
+			{ name: "Ruby on Rails", rating: 2 },
+		]
+	},
+	{
+		title: "DB & Devops",
+		entries: [
+			{ name: "PostgreSQL", rating: 4 },
+			{ name: "Google Cloud", rating: 3 },
+			{ name: "Redis", rating: 3 },
+			{ name: "Docker/Kubernetes", rating: 2 },
+			{ name: "Load Balancing/CDNs", rating: 2 },
+		]
+	},
+	{
+		title: "CS Topics",
+		entries: [
+			{ name: "GIS & Maps", rating: 4 },
+			{ name: "Audio & Signals", rating: 4 },
+			{ name: "Hardware", rating: 3 },
 		]
 	},{
 		title: "Software Domain",
@@ -68,11 +97,13 @@ var skillSets = [
 			{ name: "DevOps / Infrastructure", rating: 4 }
 		]
 	},{
-		title: "Operations",
+		title: "Hardware Domain",
 		entries: [
-			{ name: "Software Release Management", rating: 4 },
-			{ name: "UX/UI Design", rating: 3 },
-			{ name: "Technical Hiring", rating: 3 },
+			{ name: "CAD (Autodesk, Solidworks)", rating: 3 },
+			{ name: "Circuit Analysis", rating: 3 },
+			{ name: "Arduino", rating: 2 },
+			{ name: "Linux on ARM", rating: 2 },
+			{ name: "Bluetooth Low-Energy", rating: 2 }
 		]
 	}
 ];
