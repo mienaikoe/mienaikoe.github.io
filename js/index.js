@@ -55,9 +55,8 @@ var skillSets = [
 			{ name: "JavaScript", rating: 5 },
 			{ name: "Java", rating: 3 },
 			{ name: "Scala", rating: 3 },
+			{ name: "Python", rating: 3 },
 			{ name: "Ruby", rating: 2 },
-			{ name: "Python", rating: 2 },
-			{ name: "PHP", rating: 2 }
 		]
 	},
 	
@@ -66,8 +65,9 @@ var skillSets = [
 		entries: [
 			{ name: "React", rating: 4 },
 			{ name: "React Native", rating: 4 },
-			{ name: "Node/Express", rating: 4 },
+			{ name: "Node+Express", rating: 4 },
 			{ name: "Play Framework", rating: 3 },
+			{ name: "Django", rating: 2 },
 			{ name: "Ruby on Rails", rating: 2 },
 		]
 	},
@@ -84,10 +84,9 @@ var skillSets = [
 	{
 		title: "CS Topics",
 		entries: [
-			{ name: "Geo & Maps", rating: 4 },
+			{ name: "GIS & Maps", rating: 4 },
 			{ name: "Audio & Signals", rating: 4 },
-			{ name: "Graphics", rating: 2 },
-			{ name: "Linear Algebra", rating: 2 },
+			{ name: "Hardware", rating: 3 },
 		]
 	},
 	{
@@ -102,7 +101,6 @@ var skillSets = [
 		title: "Hardware",
 		entries: [
 			{ name: "Circuit Design & Engineering", rating: 3 },
-			{ name: "Arduino", rating: 3 },
 			{ name: "Thermal and Fluid Mechanics", rating: 3 },
 			{ name: "Bluetooth Low-Energy", rating: 2 }
 		]
