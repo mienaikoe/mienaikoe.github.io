@@ -63,8 +63,7 @@ var skillSets = [
 	{
 		title: "Frameworks",
 		entries: [
-			{ name: "React", rating: 4 },
-			{ name: "React Native", rating: 4 },
+			{ name: "React/React Native", rating: 4 },
 			{ name: "Node+Express", rating: 4 },
 			{ name: "Play Framework", rating: 3 },
 			{ name: "Django", rating: 2 },
