@@ -1,7 +1,9 @@
 // Variables
 
 $trim:#22CCAA;
+$link: #407899;
 $contact_trim:#FFFFFF;
+//$link: #39A0ED;
 
 $contact_dimension:48px;
 $column_dimension: (8.5in - 1in) / 3;
@@ -32,7 +34,12 @@ body {
 }
 
 a{
-  color: #37F;
+  color: $link;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
 }
 
 

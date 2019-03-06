@@ -74,10 +74,10 @@ var skillSets = [
 		title: "DB & Devops",
 		entries: [
 			{ name: "PostgreSQL", rating: 4 },
-			{ name: "Google Cloud", rating: 3 },
+			{ name: "Google Cloud/AWS", rating: 3 },
 			{ name: "Redis", rating: 3 },
 			{ name: "Docker/Kubernetes", rating: 2 },
-			{ name: "Load Balancing/CDNs", rating: 2 },
+			{ name: "MongoDB", rating: 2 },
 		]
 	},
 	{
