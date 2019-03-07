@@ -80,7 +80,7 @@ var skillSets = [
 		]
 	},
 	{
-		title: "Niche Technical",
+		title: "Niche Topics",
 		entries: [
 			{ name: "GIS & Maps", rating: 4 },
 			{ name: "Audio & Signals", rating: 4 },
@@ -93,7 +93,7 @@ var skillSets = [
 			{ name: "CAD (Fusion 360, Solidworks)", rating: 3 },
 			{ name: "Circuit Analysis", rating: 3 },
 			{ name: "Thermal and Fluid Analysis", rating: 3 },
-			{ name: "Bluetooth Low-Energy", rating: 2 }
+			{ name: "Bluetooth Low-Energy", rating: 2 },
 		]
 	},{
 		title: "Non-Technical",
