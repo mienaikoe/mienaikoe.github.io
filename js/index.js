@@ -55,18 +55,17 @@ var skillSets = [
 			{ name: "JavaScript", rating: 5 },
 			{ name: "Java", rating: 3 },
 			{ name: "Scala", rating: 3 },
-			{ name: "Python", rating: 3 },
+			{ name: "Python", rating: 2 },
 			{ name: "Ruby", rating: 2 },
+			{ name: "C/C++", rating: 2 },
 		]
 	},
-
 	{
 		title: "Frameworks",
 		entries: [
 			{ name: "React/React Native", rating: 4 },
 			{ name: "Node+Express", rating: 4 },
 			{ name: "Play Framework", rating: 3 },
-			{ name: "Django", rating: 2 },
 			{ name: "Ruby on Rails", rating: 2 },
 		]
 	},
@@ -81,31 +80,29 @@ var skillSets = [
 		]
 	},
 	{
-		title: "CS Topics",
+		title: "Niche Technical",
 		entries: [
 			{ name: "GIS & Maps", rating: 4 },
 			{ name: "Audio & Signals", rating: 4 },
-			{ name: "Hardware", rating: 3 },
+			{ name: "E-Commerce/Stripe", rating: 3 },
+			{ name: "Legal Research", rating: 2 },
 		]
 	},{
-		title: "Software Domain",
+		title: "Hardware",
 		entries: [
-			{ name: "Full-Stack Web Development", rating: 5 },
-			{ name: "JavaScript", rating: 5 },
-			{ name: "React-Native", rating: 4},
-			{ name: "Relational Databases", rating: 4 },
-			{ name: "DevOps / Infrastructure", rating: 4 }
-		]
-	},{
-		title: "Hardware Domain",
-		entries: [
-			{ name: "CAD (Autodesk, Solidworks)", rating: 3 },
+			{ name: "CAD (Fusion 360, Solidworks)", rating: 3 },
 			{ name: "Circuit Analysis", rating: 3 },
-			{ name: "Arduino", rating: 2 },
-			{ name: "Linux on ARM", rating: 2 },
+			{ name: "Thermal and Fluid Analysis", rating: 3 },
 			{ name: "Bluetooth Low-Energy", rating: 2 }
 		]
-	}
+	},{
+		title: "Non-Technical",
+		entries: [
+			{ name: "UI Design", rating: 3 },
+			{ name: "UX Research", rating: 3 },
+			{ name: "Project Management", rating: 2},
+		]
+	},
 ];
 
 
