@@ -3,43 +3,36 @@ body {
   padding: 0;
   background-color: #ccc;
   font-family: kiroregular;
-  font-size: 12px;
-}
+  font-size: 13px; }
 
 .paper {
   background-color: white;
   width: 8.5in;
   height: 11in;
   padding: 0.5in;
-  margin: 0px auto;
+  margin: 0 auto 0.5in;
   position: relative;
-  overflow: hidden;
-  box-shadow: 0px 0px 20px black;
-}
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
 
 a {
   color: #407899;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 h1 {
   font-size: 3em;
   line-height: 0.8em;
   font-weight: bold;
   margin: 0;
-  clear: both;
-}
+  clear: both; }
 
 h2 {
   font-size: 1.7em;
   font-weight: bold;
-  margin: 0.1in 0 0;
+  margin: 0.4in 0 0;
   clear: both;
-  text-align: left;
-}
+  text-align: left; }
 
 h3 {
   font-size: 1.2em;
@@ -47,20 +40,17 @@ h3 {
   font-weight: bold;
   margin: 0;
   clear: both;
-  text-align: left;
-}
+  text-align: left; }
 
 #stickyHeader {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  display: none;
-}
+  display: none; }
 
 .alignment-right {
-  text-align: right;
-}
+  text-align: right; }
 
 @media screen {
   #contacts {
@@ -68,166 +58,157 @@ h3 {
     top: 100px;
     left: 0px;
     width: 48px;
-    box-shadow: 0px 0px 5px black;
-  }
-  #contacts .contactRow {
-    position: relative;
-    height: 48px;
-    display: block;
-  }
-  #contacts .contactRow .contact {
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    font-size: 18px;
-    text-align: center;
-    background-color: #22CCAA;
-    color: #FFFFFF;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #contacts .contactRow .contact_link {
-    width: 0;
-    position: absolute;
-    top: 0;
-    left: 48px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    height: 48px;
-    line-height: 48px;
-    background-color: white;
-    color: #22CCAA;
-  }
-  #contacts .contactRow:hover > .contact, #contacts .contactRow .locked > .contact {
-    color: #22CCAA;
-    background-color: #FFFFFF;
-  }
-  #contacts .contactRow:hover > .contact_link, #contacts .contactRow .locked > .contact_link {
-    width: 160px;
-    padding: 0px 16px;
-    border-right: 3px solid #22CCAA;
-  }
-}
-#brand {
-  margin-bottom: 24px;
+    box-shadow: 0px 0px 5px black; }
+    #contacts .contactRow {
+      position: relative;
+      height: 48px;
+      display: block; }
+      #contacts .contactRow .contact {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #22ccaa;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      #contacts .contactRow .contact_link {
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: 48px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        height: 48px;
+        line-height: 48px;
+        background-color: white;
+        color: #22ccaa; }
+      #contacts .contactRow:hover > .contact,
+      #contacts .contactRow .locked > .contact {
+        color: #22ccaa;
+        background-color: #ffffff; }
+      #contacts .contactRow:hover > .contact_link,
+      #contacts .contactRow .locked > .contact_link {
+        width: 160px;
+        padding: 0px 16px;
+        border-right: 3px solid #22ccaa; } }
+
+.brand {
   text-align: right;
-}
-#brand p {
-  font-size: 1em;
-  line-height: 1.2em;
-  margin: 0;
-}
+  position: sticky;
+  padding: 1rem 0;
+  top: 0;
+  background-color: white; }
+  .brand p {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0; }
 
 .section {
   margin-bottom: 0.2in;
-  text-align: right;
-}
+  text-align: right; }
 
-#skills .column {
-  width: 2.5in;
-  margin: 12px 12px 0px;
-  display: inline-block;
-}
-#skills .column h3 {
-  margin-bottom: 0.2em;
-}
-#skills .column .entry {
+#skills .skill-sets {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; }
+  #skills .skill-sets .skill-set {
+    flex: 1; }
+
+#skills h3 {
+  margin-bottom: 0.2em; }
+
+#skills .entry {
   height: 1.4em;
   line-height: 1.1em;
   font-size: 1em;
-}
-#skills .column .entry .rating {
-  height: 1.1em;
-  width: 35px;
-  float: left;
-}
-#skills .column .entry .rating .bar {
-  height: 1.1em;
-  width: 5px;
-  background-color: #22CCAA;
-  margin: 0px 1px;
-  float: right;
-}
-#skills .column .entry .name {
-  height: 1.1em;
-  margin: 0px 4px;
-  float: left;
-}
+  display: flex;
+  flex-direction: row;
+  align-items: baseline; }
+  #skills .entry .rating {
+    height: 0;
+    width: 70px;
+    border-bottom: 7px solid #22ccaa; }
+    #skills .entry .rating.level-1 {
+      margin-left: 56px;
+      width: 14px; }
+    #skills .entry .rating.level-2 {
+      margin-left: 42px;
+      width: 28px; }
+    #skills .entry .rating.level-3 {
+      margin-left: 28px;
+      width: 42px; }
+    #skills .entry .rating.level-4 {
+      margin-left: 14px;
+      width: 56px; }
+    #skills .entry .rating.level-5 {
+      margin-left: 0px;
+      width: 70px; }
+  #skills .entry .name {
+    height: 1.1em;
+    margin: 0px 4px;
+    float: left; }
 
-.project {
-  width: 2.5in;
-  margin: 12px 12px 0px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-}
-.project .image {
-  display: block;
-  width: 100%;
-  height: 160px;
-  background-size: cover;
-  background-position: center;
-}
-.project p {
-  margin: 0.3em 0 0.3em 1.2em;
-  display: list-item;
-  list-item-type: square;
-}
-.project .metadata {
-  font-style: italic;
-}
-.project .technologies {
-  margin-left: 1em;
-}
-.project .technology {
-  color: #fff;
-  background-color: #22CCAA;
-  margin: 4px 8px 4px 0px;
-  padding: 2px 4px;
-  display: inline-block;
-  font-size: 0.8em;
-}
+.list {
+  display: block; }
+  .list .project {
+    margin: 12px 0;
+    text-align: left; }
+    .list .project .image {
+      display: block;
+      width: 100%;
+      height: 160px;
+      background-size: cover;
+      background-position: center; }
+    .list .project p {
+      margin: 0.3em 0 0.3em 1.2em;
+      display: list-item;
+      list-item-type: square; }
+    .list .project .metadata {
+      font-style: italic; }
+    .list .project .technologies {
+      margin-left: 1em; }
+    .list .project .technology {
+      color: #fff;
+      background-color: #22ccaa;
+      margin: 4px 8px 4px 0px;
+      padding: 2px 4px;
+      display: inline-block;
+      font-size: 0.8em; }
 
 @media print {
   body {
-    background-color: white;
-  }
-
+    background-color: white; }
   .paper {
     border: 0;
     padding: 0;
-    box-shadow: none;
-  }
-
+    box-shadow: none; }
   .section {
-    page-break-inside: avoid;
-  }
-
+    page-break-inside: avoid; }
+  a {
+    color: black; }
+  .brand {
+    background-color: transparent;
+    position: static; }
   #contacts {
     position: absolute;
-    top: 0;
-  }
-  #contacts .contactRow {
-    height: auto;
-    display: block;
-  }
-  #contacts .contactRow .contact {
-    position: relative;
-    display: inline-block;
-    width: 24px;
-    text-align: center;
-  }
-  #contacts .contactRow .contact_link {
-    position: relative;
-    display: inline-block;
-    width: 160px;
-    height: auto;
-    line-height: auto;
-    font-size: 12px;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
+    top: 0; }
+    #contacts .contactRow {
+      height: auto;
+      display: block; }
+      #contacts .contactRow .contact {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        text-align: center; }
+      #contacts .contactRow .contact_link {
+        position: relative;
+        display: inline-block;
+        width: 160px;
+        height: auto;
+        line-height: auto;
+        font-size: 12px; } }
