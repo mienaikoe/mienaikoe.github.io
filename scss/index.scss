@@ -259,15 +259,18 @@ $skill_entry_padding_y: 0.2em;
   #contacts {
     position: absolute;
     top: 0;
+
     .contactRow {
       height: auto;
       display: block;
+
       .contact {
         position: relative;
         display: inline-block;
         width: 24px;
         text-align: center;
       }
+
       .contact_link {
         position: relative;
         display: inline-block;
@@ -275,6 +278,24 @@ $skill_entry_padding_y: 0.2em;
         height: auto;
         line-height: auto;
         font-size: 12px;
+      }
+    }
+  }
+
+  #skills {
+    .skill-sets {
+      .skill-set {
+        .entry {
+          background-color: transparent;
+          color: black;
+          border: 1px solid black;
+
+          @each $level in $bar_levels {
+            &.level-#{$level} {
+              background-color: transparent;
+            }
+          }
+        }
       }
     }
   }
