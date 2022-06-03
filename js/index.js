@@ -15,32 +15,38 @@ Number.prototype.times = function (fxn) {
 
 const SKILLS = [
   {
-    title: "Languages",
+    title: "Languages & Frameworks",
     entries: [
-      { name: "JavaScript", rating: 5 },
-      { name: "Python", rating: 3 },
-      { name: "Java/Scala", rating: 2 },
-      { name: "Ruby", rating: 2 },
-      { name: "C/C++", rating: 2 },
+      { name: "JavaScript / Typescript", rating: 5 },
+      { name: "React", rating: 5 },
+      { name: "Express", rating: 4 },
+      { name: "Python / Pandas", rating: 4 },
+      { name: "React Native", rating: 3 },
+      { name: "Java", rating: 2 },
+      { name: "Scala / Play", rating: 2 },
+      { name: "Ruby / Rails", rating: 2 },
+      { name: "C & C++", rating: 2 },
     ],
   },
   {
-    title: "Architecture",
+    title: "Architecture & Services",
     entries: [
-      { name: "Relational Databases", rating: 4 },
-      { name: "ETL Pipelines", rating: 3 },
-      { name: "Google Cloud / AWS", rating: 3 },
-      { name: "Redis & RabbitMQ", rating: 2 },
-      { name: "Docker/Kubernetes", rating: 2 },
+      { name: "Relational Databases (Postgres)", rating: 4 },
+      { name: "Stripe", rating: 4 },
+      { name: "Apache Airflow", rating: 3 },
+      { name: "Google Cloud & AWS", rating: 3 },
+      { name: "Docker / Kubernetes", rating: 2 },
+      { name: "Redis", rating: 2 },
     ],
   },
   {
     title: "Non-Engineering Skills",
     entries: [
-      { name: "UI/UX Design", rating: 3 },
+      { name: "UI Design", rating: 3 },
       { name: "Project Management", rating: 2 },
       { name: "A/B Experiment Design", rating: 2 },
       { name: "Copy Writing", rating: 2 },
+      { name: "UX Research", rating: 2 },
     ],
   },
 ];
@@ -76,7 +82,7 @@ const EXPERIENCE = [
     metadata: ["Senior Software Engineer", "June 2019 - August 2021"],
     tasks: [
       "Drafted and built the infrastructure for a machine-learning-based product that predicts patient ER visits for oncology nurses",
-      "Refactored and maintained complex Extract, Transform & Load (ETL) pipelines with Apache Airflow for quarterly delivery of abstracted cancer data",
+      "Maintained complex and ever-changing extract, transform & load (ETL) pipelines with Apache Airflow for quarterly delivery of abstracted cancer data",
       "Designed UI and wrote the code for a research project tracking dashboard that served as a communication platform between academic researchers and Flatiron clinical data analysts",
     ],
   },
@@ -106,7 +112,7 @@ const EXPERIENCE = [
   {
     title: "EDDI: A Desalinator for Irrigation",
     link: "https://www.youtube.com/watch?v=A_Z0X6SA5Hk",
-    metadata: ["General Lead", "May 2015 - September 2017"],
+    metadata: ["Team Lead", "May 2015 - September 2017"],
     tasks: [
       "Led a six-person team on an ambitious year-long side project to build a smart desalinator for irrigation",
       "Designed and built the circuit layouts for all sensor and control hardware.",
@@ -150,9 +156,12 @@ const EXPERIENCE = [
 
 const EDUCATION = [
   {
-    title: "Bloomberg Financial Software Training",
+    title: "Bloomberg FSD Training",
     link: null,
-    metadata: ["FSD Trainee", "August 2010 - December 2010"],
+    metadata: [
+      "Financial Software Developer Trainee",
+      "August 2010 - December 2010",
+    ],
     tasks: [
       "Learned C++, data structures, and algorithms during an intensive introductory course sponsored by Bloomberg.",
       "Led a team in a 3-day test of refactoring and debugging a Fortran project",
@@ -207,10 +216,15 @@ function initSkills(container) {
         { class: "entries" },
         null,
         skillSet.entries.map((skill) =>
-          createElement("div", { class: "entry" }, null, [
-            createElement("div", { class: `rating level-${skill.rating}` }),
-            createElement("div", { class: "name" }, skill.name),
-          ])
+          createElement(
+            "div",
+            { class: `entry level-${skill.rating}` },
+            skill.name
+            // , [
+            //   // createElement("div", { class: `rating level-${skill.rating}` }),
+            //   createElement("div", { class: "name" }, skill.name),
+            // ]
+          )
         )
       ),
     ]);
