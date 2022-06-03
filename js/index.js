@@ -53,7 +53,7 @@ const SKILLS = [
 
 const EXPERIENCE = [
   {
-    title: "Loom, Inc.",
+    title: "Loom",
     link: "https://loom.com",
     metadata: ["Senior Software Engineer", "September 2021 - June 2022"],
     tasks: [
@@ -70,8 +70,8 @@ const EXPERIENCE = [
     tasks: [
       "Led a two-person team to design, build, and sell a web application for organizing dragon boat racing teams",
       "Mentored a junior engineer on code review, sprint planning, node.js, and React",
-      "Synthesized interviews with athletes and coaches into meaningful feature design specs",
-      "Taught athletes and coaches how to use Wakebird, and solicited feedback to get to the bottom of customer needs",
+      "Interviewed athletes and coaches to translate their feedback into meaningful feature design specs",
+      "Demoed our product to athletes and coaches and solicited feedback to get to the bottom of customer needs",
       "Reviewed bookkeping ledger and tax remittance on a quarterly basis",
     ],
   },
@@ -82,8 +82,8 @@ const EXPERIENCE = [
     metadata: ["Senior Software Engineer", "June 2019 - August 2021"],
     tasks: [
       "Drafted and built the infrastructure for a machine-learning-based product that predicts patient ER visits for oncology nurses",
-      "Maintained complex and ever-changing extract, transform & load (ETL) pipelines with Apache Airflow for quarterly delivery of abstracted cancer data",
       "Designed UI and wrote the code for a research project tracking dashboard that served as a communication platform between academic researchers and Flatiron clinical data analysts",
+      "Maintained complex and ever-changing extract, transform & load (ETL) pipelines with Apache Airflow for quarterly delivery of abstracted cancer data",
     ],
   },
 
@@ -93,7 +93,7 @@ const EXPERIENCE = [
     metadata: ["Software Engineer II", "November 2018 - March 2019"],
     tasks: [
       "Investigated slow queries to solve slowdowns on a Django-based Content Management System (CMS).",
-      "Quickly picked up Python, Typescript, and Phabricator concepts",
+      "Quickly picked up Python, Typescript, Phabricator, and CirclCI to work in a fast-paced continuous-delpoyment environment",
       "Expanded test coverage across the CMS, learning more specific technical details about pytest",
     ],
   },
@@ -103,7 +103,8 @@ const EXPERIENCE = [
     link: null,
     metadata: ["Co-Founder and CTO", "September 2016 - September 2018"],
     tasks: [
-      "Built the entire stack of Web, Mobile, Backend, and Infrastructure from the ground-up using React, React-Native, Scala/Play, Postgresql, and Google Cloud.",
+      "Acted as the sole engineer, designer, and product manager for a founding-stage events marketplace startup.",
+      "Built the entire stack of web and mobile products from the ground-up using React, React-Native, Scala/Play, Postgresql, and Google Cloud.",
       "Hired and led Design, QA, and software freelancers to help contribute to the product",
       "Built a three-party payment processing system for tickets with Stripe Connect",
     ],
@@ -112,12 +113,11 @@ const EXPERIENCE = [
   {
     title: "EDDI: A Desalinator for Irrigation",
     link: "https://www.youtube.com/watch?v=A_Z0X6SA5Hk",
-    metadata: ["Team Lead", "May 2015 - September 2017"],
+    metadata: ["Team Lead", "May 2015 - September 2016"],
     tasks: [
-      "Led a six-person team on an ambitious year-long side project to build a smart desalinator for irrigation",
-      "Designed and built the circuit layouts for all sensor and control hardware.",
-      "Designed a fluid routing and valve system for an electrodialysis system to achieve precise water salinity",
+      "Led a six-person team on an ambitious year-long after-work project to build a smart desalinator for agricultural irrigation.",
       "Won Grand Prize ($100k) and attended marketing events with Samsung.",
+      "Directed the design and construction of every component of an electrodialysis system, including circuit layouts for integrated sensor and control hardware, CAD drawings for fluid flow, and an onboard linux kernel serving sensor data in real time via a web application.",
     ],
   },
 
@@ -127,8 +127,8 @@ const EXPERIENCE = [
     metadata: ["Software Engineer", "April 2015 - August 2016"],
     tasks: [
       "Used React and Node to bring the Citymaps Web product to market.",
-      "Worked with a graphics developers to integrate a custom-made WebGL Map into a web application.",
-      "Collaborated with designers to implement beautiful, performant components in a timely manner.",
+      "Worked with graphics engineers to integrate a custom-made WebGL Map into a web application.",
+      "Collaborated with designers to implement beautiful and performant components in a timely manner.",
     ],
   },
 
@@ -137,8 +137,8 @@ const EXPERIENCE = [
     link: "https://bloomberglaw.com",
     metadata: ["Full-Stack Developer", "January 2011 - March 2015"],
     tasks: [
-      "Coordinated work amongst a distributed team of engineers to quickly build a CMS for Bloomberg Law dashboards.",
-      "Built and maintained a comparing and diffing tool for clauses in legal transactional documents",
+      "Coordinated work amongst a distributed team of engineers to quickly build a CMS for Bloomberg Law.",
+      "Architected and built a comparing and diffing tool for clauses in legal transactional documents",
       "Replaced and maintained an HTML -> PDF & RTF transformer and renderer for Bloomberg's legal research application.",
     ],
   },
@@ -149,7 +149,7 @@ const EXPERIENCE = [
     metadata: ["Materials Engineering Intern", "2008 - 2009"],
     tasks: [
       "Developed a concept for testing the electrical properties of a carbon-composite aircraft brake.",
-      "Used an Atomic Force Microscope to gather data on the microstructure of carbon materials.",
+      "Used an atomic force microscope to gather data on the microstructure of carbon-composite materials.",
     ],
   },
 ];
@@ -164,7 +164,7 @@ const EDUCATION = [
     ],
     tasks: [
       "Learned C++, data structures, and algorithms during an intensive introductory course sponsored by Bloomberg.",
-      "Led a team in a 3-day test of refactoring and debugging a Fortran project",
+      "Led a team in a 3-day final project of refactoring and debugging a large Fortran codebase",
     ],
   },
 
@@ -173,9 +173,9 @@ const EDUCATION = [
     link: null,
     metadata: ["B.S. Mechanical Engineering", "Class of 2010"],
     tasks: [
-      "Designed vital components of a water system for a community in The Dominican Republic through Engineers Without Borders.",
-      "Co-led a team of student engineers to build an irrigation project at a campus farm.",
-      "Designed and Developed a website for an Animal Ethics group on campus.",
+      "Designed vital components of a water system for a community in the Dominican Republic through Engineers Without Borders.",
+      "Co-led a team of student engineers to design and construct an irrigation project at a campus farm.",
+      "Designed and Developed a website for an undergraduate animal ethics group.",
     ],
   },
 ];

@@ -169,6 +169,7 @@ h3 {
   .paper {
     border: 0;
     padding: 0;
+    margin: 0;
     box-shadow: none; }
   .section {
     page-break-inside: avoid; }
