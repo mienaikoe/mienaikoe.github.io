@@ -1,287 +1,303 @@
 // Variables
 
-$trim:#22CCAA;
+$trim: #22ccaa;
 $link: #407899;
-$contact_trim:#FFFFFF;
+$contact_trim: #ffffff;
 //$link: #39A0ED;
 
-$contact_dimension:48px;
+$contact_dimension: 48px;
 $column_dimension: (8.5in - 1in) / 3;
 
+$bar_width: 7px;
+$bar_levels: 1, 2, 3, 4, 5;
 
 // Top-Level
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #ccc;
-    font-family: kiroregular;
-    font-size: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  font-family: kiroregular;
+  font-size: 13px;
 }
 
-.paper{
-    background-color: white;
-    width: 8.5in;
-    height: 11in;
-    padding: .5in;
-    //border-right: 1px solid black;
-    //border-left: 1px solid black;
-    //box-shadow: 0px 0px 15px #333;
-    margin: 0px auto;
-    position: relative; //for the absolutes
-    overflow: hidden;
-    box-shadow: 0px 0px 20px black;
+.paper {
+  background-color: white;
+  width: 8.5in;
+  height: 11in;
+  padding: 0.5in;
+  margin: 0 auto 0.5in;
+  position: relative; //for the absolutes
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
-a{
+a {
   color: $link;
   text-decoration: none;
 
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
 }
 
-
-
 // Headings
 
-h1{
-    font-size: 3em;
-    line-height: 0.8em;
-    font-weight: bold;
-    margin: 0;
-    //text-transform: uppercase;
-    clear: both;
+h1 {
+  font-size: 3em;
+  line-height: 0.8em;
+  font-weight: bold;
+  margin: 0;
+  clear: both;
 }
 
-h2{
-    font-size: 1.7em;
-    //line-height: 1.8em;
-    font-weight: bold;
-    margin: 0.1in 0 0;
-    //text-transform: uppercase;
-    clear: both;
-    text-align: left;
+h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 0.4in 0 0;
+  clear: both;
+  text-align: left;
 }
 
-h3{
-    font-size: 1.2em;
-    line-height: 2em;
-    font-weight: bold;
-    margin: 0;
-    //text-transform: uppercase;
-    clear: both;
-    text-align: left;
+h3 {
+  font-size: 1.3em;
+  line-height: 2em;
+  font-weight: bold;
+  margin: 0;
+  clear: both;
+  text-align: left;
 }
 
-#stickyHeader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: none;
+.alignment-right {
+  text-align: right;
 }
-
-.alignment-right{
-    text-align: right;
-}
-
-
 
 // Special Sections
 
-@media screen{
-    #contacts{
-        position: fixed;
-        top: 100px;
-        left: 0px;
+@media screen {
+  #contacts {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    width: $contact_dimension;
+    box-shadow: 0px 0px 5px black;
+
+    .contactRow {
+      position: relative;
+      height: $contact_dimension;
+      display: block;
+
+      .contact {
         width: $contact_dimension;
-        box-shadow: 0px 0px 5px black;
-        .contactRow{
-            position:relative;
-            height: $contact_dimension;
-            display: block;
-            .contact{
-                width: $contact_dimension;
-                height: $contact_dimension;
-                line-height: $contact_dimension;
-                font-size: 18px;
-                text-align: center;
-                background-color: $trim;
-                color: #FFFFFF;
-                transition: all 0.3s ease;
-                cursor: pointer;
-                position: absolute;
-                top:0;
-                left:0;
-            }
-            .contact_link{
-                width: 0;
-                position: absolute;
-                top:0;
-                left: $contact_dimension;
-                overflow: hidden;
-                transition: all 0.3s ease;
-                height: $contact_dimension;
-                line-height: $contact_dimension;
-                background-color: white;
-                color: $trim;
-            }
-            &:hover, .locked{
-                & > .contact{
-                    color: $trim;
-                    background-color: #FFFFFF;
-                }
-                & > .contact_link{
-                    width: 160px;
-                    padding: 0px 16px;
-                    border-right: 3px solid $trim;
-                }
-            }
+        height: $contact_dimension;
+        line-height: $contact_dimension;
+        font-size: 18px;
+        text-align: center;
+        background-color: $trim;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .contact_link {
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: $contact_dimension;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        height: $contact_dimension;
+        line-height: $contact_dimension;
+        background-color: white;
+        color: $trim;
+      }
+
+      &:hover,
+      .locked {
+        & > .contact {
+          color: $trim;
+          background-color: #ffffff;
         }
+        & > .contact_link {
+          width: 160px;
+          padding: 0px 16px;
+          border-right: 3px solid $trim;
+        }
+      }
     }
+  }
 }
 
+.brand {
+  // margin-bottom: 1in;
+  text-align: right;
+  position: sticky;
+  padding: 1rem 0;
+  top: 0;
+  background-color: white;
 
-#brand{
-    margin-bottom: 24px;
-    text-align: right;
-
-    p{
-        font-size: 1em;
-        line-height: 1.2em;
-        margin: 0;
-    }
+  p {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0;
+  }
 }
-
-
 
 // Content Sections
 
-.section{
-    margin-bottom: 0.2in;
-    text-align: right;
+.section {
+  margin-bottom: 0.2in;
+  text-align: right;
 }
-
 
 $skill_entry_height: 1.1em;
+$skill_entry_padding_y: 0.2em;
 
-#skills{
-    .column{
-        width: $column_dimension;
-        margin: 12px 12px 0px;
-        display:inline-block;
+#skills {
+  .skill-sets {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 
-        h3{
-          margin-bottom: 0.2em;
+    .skill-set {
+      flex: 1;
+      text-align: left;
+
+      h3 {
+        margin-bottom: 0.2em;
+      }
+
+      .entry {
+        height: 1.4em;
+        line-height: $skill_entry_height;
+        font-size: 1em;
+        display: inline-block;
+
+        padding: $skill_entry_padding_y 0.6em $skill_entry_padding_y - 0.2em;
+        background-color: $trim;
+        color: white;
+        font-weight: bold;
+        border-radius: $skill_entry_height + $skill_entry_padding_y;
+        margin: 0 0.5em 0.3em 0;
+
+        @each $level in $bar_levels {
+          &.level-#{$level} {
+            background-color: hsl(168, (71% - ((5 - $level) * 20%)), 37%);
+          }
         }
-
-        .entry{
-            height: 1.4em;
-            line-height: $skill_entry_height;
-            font-size: 1em;
-            .rating{
-                height: $skill_entry_height;
-                width: 7px * 5;
-                float: left;
-                .bar{
-                    height: $skill_entry_height;
-                    width: 5px;
-                    background-color: $trim;
-                    margin: 0px 1px;
-                    float: right;
-                }
-            }
-            .name{
-                height: $skill_entry_height;
-                margin: 0px 4px;
-                float: left;
-            }
-        }
+      }
     }
+  }
 }
 
+.list {
+  display: block;
+  // display: grid;
+  // grid-template-columns: auto auto;
+  // grid-column-gap: 0.5in;
 
-
-.project{
-    width: $column_dimension;
-    margin: 12px 12px 0px;
-    display: inline-block;
-    vertical-align: top;
+  .project {
+    margin: 12px 0;
     text-align: left;
 
-    .image{
+    .image {
       display: block;
-        width: 100%;
-        height: 160px;
-        background-size: cover;
-        background-position: center;
+      width: 100%;
+      height: 160px;
+      background-size: cover;
+      background-position: center;
     }
-    p{
-      margin: 0.3em 0  0.3em 1.2em;
+    p {
+      margin: 0.3em 0 0.3em 1.2em;
       display: list-item;
       list-item-type: square;
     }
-    .metadata{
-        font-style: italic;
+    .metadata {
+      font-style: italic;
     }
-    .technologies{
+    .technologies {
       margin-left: 1em;
     }
-    .technology{
-        color: #fff;
-        background-color: $trim;
-        margin: 4px 8px 4px 0px;
-        padding: 2px 4px;
-        display: inline-block;
-        font-size: 0.8em;
+    .technology {
+      color: #fff;
+      background-color: $trim;
+      margin: 4px 8px 4px 0px;
+      padding: 2px 4px;
+      display: inline-block;
+      font-size: 0.8em;
     }
+  }
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 980px) {
-
 }
 
-@media print{
-    body{
-      background-color: white;
-    }
-    .paper{
-        border: 0;
-        padding: 0;
-        box-shadow: none;
-    }
-    .section{
-        page-break-inside: avoid;
-    }
+@media print {
+  body {
+    background-color: white;
+  }
+  .paper {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+  .section {
+    page-break-inside: avoid;
+  }
 
-    #contacts{
-        position: absolute;
-        top: 0;
-        .contactRow{
-            height: auto;
-            display: block;
-            .contact{
-                position: relative;
-                display: inline-block;
-                width: 24px;
-                text-align: center;
-            }
-            .contact_link{
-                position: relative;
-                display: inline-block;
-                width: 160px;
-                height: auto;
-                line-height: auto;
-                font-size: 12px;
-            }
-        }
+  a {
+    color: black;
+  }
+
+  .brand {
+    background-color: transparent;
+    position: static;
+  }
+
+  #contacts {
+    position: absolute;
+    top: 0;
+
+    .contactRow {
+      height: auto;
+      display: block;
+
+      .contact {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        text-align: center;
+      }
+
+      .contact_link {
+        position: relative;
+        display: inline-block;
+        width: 160px;
+        height: auto;
+        line-height: auto;
+        font-size: 12px;
+      }
     }
+  }
+
+  #skills {
+    .skill-sets {
+      .skill-set {
+        .entry {
+          background-color: transparent;
+          color: black;
+          border: 1px solid black;
+
+          @each $level in $bar_levels {
+            &.level-#{$level} {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
 }

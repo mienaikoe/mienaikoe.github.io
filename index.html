@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Jesse Lee</title>
 
@@ -9,23 +9,19 @@
         <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="css/index.css"/>
 
-        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </head>
 
 
     <body>
-        <h2 id="stickyHeader">
-
-        </h2>
 
         <div class="paper">
             <div id="contacts">
                 <a class="contactRow"
-                   href="https://www.linkedin.com/pub/jesse-lee/36/789/328"
+                   href="https://www.linkedin.com/in/jesseleenyc/"
                    target="_blank">
                     <div class="contact fa fa-linkedin"></div>
-                    <div class="contact_link">Jesse Lee on LinkedIn</div>
+                    <div class="contact_link">jesseleenyc</div>
                 </a>
                 <a class="contactRow"
                    href="http://www.github.com/mienaikoe"
@@ -45,180 +41,63 @@
                 </a>
             </div>
 
-            <div id="brand">
+            <div class="brand">
                 <h1>Jesse Lee</h1>
-                <p>
-                  <a href="mailto:mienaikoe@gmail.com"> mienaikoe@gmail.com </a>
-                </p>
-                <p>Full-Stack Developer, Engineer, Musician</p>
+                <p>Software Engineer</p>
             </div>
 
             <div id="skills" class="section">
                 <h2>Skills</h2>
-                <script type="text/javascript">
-                    $(function(){
-                        initSkills($("#skills"));
-                    });
-                </script>
+                <div class="skill-sets" ></div>
             </div>
 
             <div id="experience" class="section">
-                <h2>Education & Experience</h2>
-	    	<div class="project">
-                    <h3>Knewton</h3>
-                    <div class="metadata">Software Engineer II</div>
-                    <div class="metadata">November 2018 - March 2019</div>
-                    <p>Solved workflow slowdowns for a Django-based Content Management System.</p>
-                    <p>Honed testing and troubleshooting skills in a multi-service, continuous integration software ecosystem.</p>
-                </div>
-	    	<div class="project">
-                	<h3>
-				<a href="https://www.kinvite.co" target="_blank">
-					Kinvite
-				</a>
-			</h3>
-                    <div class="metadata">Co-Founder and CTO</div>
-                    <div class="metadata">September 2016 - September 2018</div>
-                    <p>Built the entire stack of Web, Mobile, Backend, and Infrastructure from the ground-up using React, React-Native, Scala/Play, Postgresql, and Google Cloud.</p>
-                    <p>Hired Design, QA, and Development freelancers for part-time work</p>
-                    <p>Architected a three-party payment processing system for tickets with Stripe</p>
-                </div>
-                <div class="project">
-                	<h3>
-			    Citymaps
-			</h3>
-                    <div class="metadata">Web Developer</div>
-                    <div class="metadata">April 2015 - August 2016</div>
-                    <p>Used React and Node to bring the Citymaps Web product to market.</p>
-                    <p>Worked with a graphics developers to integrate a WebGL Map into the app.</p>
-		                <p>Collaborated with designers to implement beautiful, performant components in a timely manner.</p>
-                </div>
-                <div class="project">
-                	<h3>
-				<a href="https://bloomberglaw.com" target="_blank">
-					Bloomberg LP
-				</a>
-			</h3>
-                    <div class="metadata">Full-Stack Developer</div>
-                    <div class="metadata">August 2010 - March 2015</div>
-                    <p>Replaced and maintained critical backend services for Bloomberg's legal research application.</p>
-                    <p>Coordinated work amongst small team of developers in two cities to quickly build features for new products.</p>
-                    <p>Learned C++ and computer science concepts during 15-week intensive course.</p>
-                </div>
-                <div class="project">
-                    <h3>Goodrich Corporation</h3>
-                    <div class="metadata">Intern 2008 - 2009</div>
-                    <div class="metadata">Materials Testing R&amp;D</div>
-                    <p>Developed a concept for testing the electrical properties of a carbon-composite aircraft brake.</p>
-                    <p>Used an Atomic Force Microscope to gather data on the microstructure of carbon materials.</p>
-                </div>
-                <div class="project">
-                    <h3>Case Western Reserve University</h3>
-                    <div class="metadata">Undergraduate 2006 - 2010</div>
-                    <div class="metadata">Mechanical Engineering</div>
-                    <p>Designed and Developed a simple static website for an Animal Ethics group on campus.</p>
-                    <p>Co-led a team of student engineers in an irrigation project at a campus farm.</p>
-                    <p>Designed vital components of a water system for a community in The Dominican Republic through Case's Engineers Without Borders chapter.</p>
-                </div>
-            </div>
-
-            <div id="projects" class="section">
-                <h2> Self-Starting Team Projects </h2>
-		    
-	    	<div class="project">
-			<h3>
-				<a href="https://www.wakebird.com" target="_blank">
-					Wakebird
-				</a>
-			</h3>
-                       	<div class="metadata"></div>
-			<p>Collaborated with another engineer and an industry expert to build an organizing app for boat racing teams</p>
-			<p>Mentored a junior engineer on the topics of code review, sprint planning, node.js, and React</p>
-			<p>Synthesized interviews with professionals into meaningful feature design specs</p>
-			<p>Demoed and taught a team how to use the app we built, which became their preferred tool</p>
-			<div class="technologies">
-				<span class="technology">React</span>
-				<span class="technology">Heroku</span>
-        			<span class="technology">MongoDB</span>
-				<span class="technology">Express</span>
-			</div>
-		</div>
-		    
-	    	<div class="project">
-			<h3>
-				<a href="https://www.youtube.com/watch?v=A_Z0X6SA5Hk" target="_blank">
-					EDDI: A Desalinator for Irrigation
-				</a>
-			</h3>
-			<div class="metadata">Grand Prize</div>
-			<p>Led a team on an ambitious year-long project to build a smart desalinator for irrigation</p>
-			<p>Designed the circuit layout for controlling the hardware components and sensing salinity and water flow</p>
-			<p>Designed a plumbing system for an automatic valve system that interfaced with the electrical components</p>
-			<div class="technologies">
-        <span class="technology">IoT</span>
-        <span class="technology">Circuit Design</span>
-        <span class="technology">Fluid Analysis</span>
-			</div>
-		</div>
-		    <!--
-                <div class="project">
-			<h3>
-				<a href="https://2015.spaceappschallenge.org/project/firsthand/" target="_blank">
-					FirstHand
-				</a>
-			</h3>
-                       	<div class="metadata">Winner: Hardware Challenge</div>
-			<p>Led a team of Developers, Designers, and Engineers on an ambitious 2-day project to improve space gloves</p>
-			<p>Designed and built a temperature feedback circuit with an Intel Edison board</p>
-			<p>Explored a spring-based mechanical counterpressure system for astronaut hands</p>
-			<div class="technologies">
-				<span class="technology">Linux on ARM</span>
-				<span class="technology">Wearables</span>
-        <span class="technology">Circuit Design</span>
-				<span class="technology">Android</span>
-			</div>
-		</div>
-		    -->
-		    
-		    
-		<div class="project">
-			<h3>
-				<a href="http://challengepost.com/software/remap-jwsua" target="_blank">
-					ReMap
-				</a>
-			</h3>
-			<div class="metadata">Winner: Data Visualization</div>
-			<p>Collaborated with a team of developers to create an native Android app for the MTA's AppQuest Challenge</p>
-			<p>Implemented Zoom and Pan Gestures on a map rendered from manually-parsed SVG</p>
-			<p>Investigated options and proposed a solution for a rudimentary cross-platform meshnet with mobile phones.</p>
-			<div class="technologies">
-        <span class="technology">Android</span>
-				<span class="technology">Vector Graphics</span>
-				<span class="technology">Touchscreen Gestures</span>
-				<span class="technology">Bluetooth Low-Energy</span>
-			</div>
-		</div>
-
-    <!--
-		<div class="project">
-			<h3>
-				<a href="https://hacktheuniverse.github.io/cosmos" target="_blank">
-					Cosmos
-				</a>
-			</h3>
- 			<div class="metadata"> Winner: Visualization </div>
-			<p>Managed the memory and cpu footprint of 100,000 stars in a 3d space by using WebGL shaders to render them</p>
-			<p>Quickly learned how to work with 3D graphics with Three.js</p>
-			<p>Created a B-V Color to RGB Color Ruby method for use in parsing star data</p>
-			<p>
-				<span class="technology">Three.js</span>
-				<span class="technology">WebGL</span>
-				<span class="technology">Ruby Scripting</span>
-			</p>
-		</div>
+                <h2>Work Experience</h2>
+                <div class="list" ></div>
             </div>
 
         </div>
+        <div class="paper">
+
+            <div class="brand">
+                <h1>Jesse Lee</h1>
+                <p>Software Engineer</p>
+            </div>
+
+            <div id="experience2" class="section">
+                <h2>Work Experience (Continued)</h2>
+                <div class="list" ></div>
+            </div>
+
+            <div id="education" class="section">
+                <h2> Education </h2>
+                <div class="list"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            const EXPERIENCE_BREAKPOINT = 5;
+
+            const init = () => {
+                const skillsContainer = document.getElementById("skills").getElementsByClassName("skill-sets")[0];
+                initSkills(skillsContainer);
+
+                const experienceContainer1 = document.getElementById("experience").getElementsByClassName("list")[0];
+                initProjects(experienceContainer1, EXPERIENCE.slice(0,EXPERIENCE_BREAKPOINT));
+
+                const experienceContainer2 = document.getElementById("experience2").getElementsByClassName("list")[0];
+                initProjects(experienceContainer2, EXPERIENCE.slice(EXPERIENCE_BREAKPOINT));
+
+                const educationContainer = document.getElementById("education").getElementsByClassName("list")[0];
+                initProjects(educationContainer, EDUCATION);
+            };
+
+            if( document.readyState === 'loading' ){
+                document.addEventListener("DOMContentLoaded", init);
+            } else {
+                init();
+            }
+        </script>
     </body>
 
 </html>
