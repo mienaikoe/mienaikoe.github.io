@@ -17,14 +17,12 @@ const SKILLS = [
   {
     title: "Languages & Frameworks",
     entries: [
-      { name: "JavaScript / Typescript", rating: 5 },
+      { name: "Typescript", rating: 5 },
       { name: "React", rating: 5 },
       { name: "Express", rating: 4 },
       { name: "Python / Pandas", rating: 4 },
       { name: "React Native", rating: 3 },
       { name: "Java", rating: 2 },
-      { name: "Scala / Play", rating: 2 },
-      { name: "Ruby / Rails", rating: 2 },
       { name: "C & C++", rating: 2 },
     ],
   },
@@ -33,6 +31,7 @@ const SKILLS = [
     entries: [
       { name: "Relational Databases (Postgres)", rating: 4 },
       { name: "Stripe", rating: 4 },
+      { name: "NoSQL databases", rating: 3 },
       { name: "Apache Airflow", rating: 3 },
       { name: "Google Cloud & AWS", rating: 3 },
       { name: "Docker / Kubernetes", rating: 2 },
@@ -52,6 +51,16 @@ const SKILLS = [
 ];
 
 const EXPERIENCE = [
+  {
+    title: "Ambrook",
+    link: "https://ambrook.com",
+    metadata: ["Software Engineer", "August 2022 - December 2022"],
+    tasks: [
+      "Led the creation of a cross-platform business analytics dashboard",
+      "Sourced data and created engaging visualizations for Ambrook Research, an editorial publication about the agriculture industry",
+    ],
+  },
+  
   {
     title: "Loom",
     link: "https://loom.com",
@@ -140,16 +149,6 @@ const EXPERIENCE = [
       "Coordinated work amongst a distributed team of engineers to quickly build a CMS for Bloomberg Law.",
       "Architected and built a comparing and diffing tool for clauses in legal transactional documents",
       "Replaced and maintained an HTML -> PDF & RTF transformer and renderer for Bloomberg's legal research application.",
-    ],
-  },
-
-  {
-    title: "Goodrich Corporation",
-    link: null,
-    metadata: ["Materials Engineering Intern", "2008 - 2009"],
-    tasks: [
-      "Developed a concept for testing the electrical properties of a carbon-composite aircraft brake.",
-      "Used an atomic force microscope to gather data on the microstructure of carbon-composite materials.",
     ],
   },
 ];
