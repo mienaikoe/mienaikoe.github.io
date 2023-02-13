@@ -22,7 +22,7 @@ const SKILLS = [
       { name: "Express", rating: 4 },
       { name: "Python / Pandas", rating: 4 },
       { name: "React Native", rating: 3 },
-      { name: "Java", rating: 2 },
+      { name: "Java / Scala", rating: 2 },
       { name: "C & C++", rating: 2 },
     ],
   },
@@ -71,20 +71,7 @@ const EXPERIENCE = [
       "Conducted A/B experiments to test our assumptions on user behavior and make more informed product decisions",
     ],
   },
-
-  {
-    title: "Wakebird",
-    link: "https://wakebird.com",
-    metadata: ["Co-Founder", "January 2019 - Present"],
-    tasks: [
-      "Led a two-person team to design, build, and sell a web application for organizing dragon boat racing teams",
-      "Mentored a junior engineer on code review, sprint planning, node.js, and React",
-      "Interviewed athletes and coaches to translate their feedback into meaningful feature design specs",
-      "Demoed our product to athletes and coaches and solicited feedback to get to the bottom of customer needs",
-      "Reviewed bookkeping ledger and tax remittance on a quarterly basis",
-    ],
-  },
-
+  
   {
     title: "Flatiron Health",
     link: "https://flatiron.com",
@@ -120,17 +107,6 @@ const EXPERIENCE = [
   },
 
   {
-    title: "EDDI: A Desalinator for Irrigation",
-    link: "https://www.youtube.com/watch?v=A_Z0X6SA5Hk",
-    metadata: ["Team Lead", "May 2015 - September 2016"],
-    tasks: [
-      "Led a six-person team on an ambitious year-long after-work project to build a smart desalinator for agricultural irrigation.",
-      "Won Grand Prize ($100k) and attended marketing events with Samsung.",
-      "Directed the design and construction of every component of an electrodialysis system, including circuit layouts for integrated sensor and control hardware, CAD drawings for fluid flow, and an onboard linux kernel serving sensor data in real time via a web application.",
-    ],
-  },
-
-  {
     title: "Citymaps",
     link: null,
     metadata: ["Software Engineer", "April 2015 - August 2016"],
@@ -149,6 +125,31 @@ const EXPERIENCE = [
       "Coordinated work amongst a distributed team of engineers to quickly build a CMS for Bloomberg Law.",
       "Architected and built a comparing and diffing tool for clauses in legal transactional documents",
       "Replaced and maintained an HTML -> PDF & RTF transformer and renderer for Bloomberg's legal research application.",
+    ],
+  },
+];
+
+const PROJECTS = [
+  {
+    title: "Wakebird",
+    link: "https://wakebird.com",
+    metadata: ["Co-Founder", "January 2019 - Present"],
+    tasks: [
+      "Led a two-person team to design, build, and sell a web application for organizing dragon boat racing teams",
+      "Mentored a junior engineer on code review, sprint planning, node.js, and React",
+      "Interviewed athletes and coaches to translate their feedback into meaningful feature design specs",
+      "Demoed our product to athletes and coaches and solicited feedback to get to the bottom of customer needs",
+      "Reviewed bookkeping ledger and tax remittance on a quarterly basis",
+    ],
+  },  
+  {
+    title: "EDDI: A Desalinator for Irrigation",
+    link: "https://www.youtube.com/watch?v=A_Z0X6SA5Hk",
+    metadata: ["Team Lead", "May 2015 - September 2016"],
+    tasks: [
+      "Led a six-person team on an ambitious year-long after-work project to build a smart desalinator for agricultural irrigation.",
+      "Won Grand Prize ($100k) and attended marketing events with Samsung.",
+      "Directed the design and construction of every component of an electrodialysis system, including circuit layouts for integrated sensor and control hardware, CAD drawings for fluid flow, and an onboard linux kernel serving sensor data in real time via a web application.",
     ],
   },
 ];
