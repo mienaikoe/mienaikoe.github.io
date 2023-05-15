@@ -22,7 +22,6 @@ const SKILLS = [
       { name: "Node | Express", rating: 4 },
       { name: "Python | Pandas | Flask", rating: 4 },
       { name: "React Native", rating: 3 },
-      { name: "Java & Scala", rating: 2 },
     ],
   },
   {
