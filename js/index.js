@@ -17,13 +17,12 @@ const SKILLS = [
   {
     title: "Languages & Frameworks",
     entries: [
-      { name: "Typescript", rating: 5 },
+      { name: "Javascript + Typescript", rating: 5 },
       { name: "React", rating: 5 },
-      { name: "Express", rating: 4 },
-      { name: "Python / Pandas", rating: 4 },
+      { name: "Node | Express", rating: 4 },
+      { name: "Python | Pandas | Flask", rating: 4 },
       { name: "React Native", rating: 3 },
-      { name: "Java / Scala", rating: 2 },
-      { name: "C & C++", rating: 2 },
+      { name: "Java & Scala", rating: 2 },
     ],
   },
   {
@@ -31,11 +30,10 @@ const SKILLS = [
     entries: [
       { name: "Relational Databases (Postgres)", rating: 4 },
       { name: "Stripe", rating: 4 },
-      { name: "NoSQL databases", rating: 3 },
+      { name: "NoSQL Databases (Firestore)", rating: 3 },
       { name: "Apache Airflow", rating: 3 },
       { name: "Google Cloud & AWS", rating: 3 },
       { name: "Docker / Kubernetes", rating: 2 },
-      { name: "Redis", rating: 2 },
     ],
   },
   {
