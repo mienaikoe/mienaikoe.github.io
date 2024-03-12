@@ -28,20 +28,19 @@ const SKILLS = [
     title: "Architecture & Services",
     entries: [
       { name: "Relational Databases (Postgres)", rating: 4 },
-      { name: "Stripe", rating: 4 },
+      { name: "Serverless Architecture", rating: 3 },
       { name: "NoSQL Databases (Firestore)", rating: 3 },
-      { name: "Apache Airflow", rating: 3 },
+      { name: "DAG-based pipelines", rating: 3 },
       { name: "Google Cloud & AWS", rating: 3 },
-      { name: "Docker / Kubernetes", rating: 2 },
     ],
   },
   {
     title: "Non-Engineering Skills",
     entries: [
       { name: "UI Design", rating: 3 },
+      { name: "Technical and Narrative Writing", rating: 3 },
       { name: "Project Management", rating: 2 },
       { name: "A/B Experiment Design", rating: 2 },
-      { name: "Copy Writing", rating: 2 },
       { name: "UX Research", rating: 2 },
     ],
   },
