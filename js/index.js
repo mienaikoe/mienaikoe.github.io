@@ -27,9 +27,9 @@ const SKILLS = [
   {
     title: "Architecture & Services",
     entries: [
-      { name: "Relational Databases (Postgres)", rating: 4 },
+      { name: "Postgres", rating: 4 },
       { name: "Serverless Architecture", rating: 3 },
-      { name: "NoSQL Databases (Firestore)", rating: 3 },
+      { name: "Firestore / DynamoDB", rating: 3 },
       { name: "DAG-based pipelines", rating: 3 },
       { name: "Google Cloud & AWS", rating: 3 },
     ],
