@@ -48,6 +48,15 @@ const SKILLS = [
 ];
 
 const EXPERIENCE = [
+   {
+    title: "Leverage",
+    link: "https://www.tryleverage.ai/",
+    metadata: ["Software Engineer", "May 2023 - Present"],
+    tasks: [
+      "Architected a performant, real-time data pipeline for supplier metrics, and built the dashboard powered by it.",
+      "Added observability, instrumentation, and modern state management to a moderately-sized React Application",
+    ],
+  },
   {
     title: "Ambrook",
     link: "https://ambrook.com",
