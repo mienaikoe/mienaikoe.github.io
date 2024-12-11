@@ -20,7 +20,7 @@ const SKILLS = [
       { name: "Javascript + Typescript", rating: 5 },
       { name: "React", rating: 5 },
       { name: "Node | Express", rating: 4 },
-      { name: "Python | Pandas | Flask", rating: 4 },
+      { name: "Python | Pandas | Flask", rating: 3 },
       { name: "React Native", rating: 3 },
     ],
   },
@@ -30,8 +30,8 @@ const SKILLS = [
       { name: "Postgres", rating: 4 },
       { name: "Serverless Architecture", rating: 3 },
       { name: "Firestore / DynamoDB", rating: 3 },
-      { name: "DAG-based pipelines", rating: 3 },
-      { name: "Google Cloud & AWS", rating: 3 },
+      { name: "AWS Lambdas", rating: 3 },
+      { name: "Terraform", rating: 3 },
     ],
   },
   {
@@ -39,7 +39,7 @@ const SKILLS = [
     entries: [
       { name: "UI Design", rating: 3 },
       { name: "Technical and Narrative Writing", rating: 3 },
-      { name: "Project Management", rating: 2 },
+      { name: "Project Management", rating: 4 },
       { name: "A/B Experiment Design", rating: 2 },
       { name: "UX Research", rating: 2 },
     ],
@@ -47,10 +47,20 @@ const SKILLS = [
 ];
 
 const EXPERIENCE = [
+  {
+    title: "Leverage",
+    link: "https://www.tryleverage.ai/",
+    metadata: ["Principal Software Engineer", "November 2024 - Present"],
+    tasks: [
+      "Led Project Management Meetings: Sprint planning, Eng Strategy, Product Steering",
+      "Mentored engineering contractors, ramping them up on our code base.",
+      "Led product specification, UI design, and engineering effort for various time-sensitive projects"
+    ],
+  },
    {
     title: "Leverage",
     link: "https://www.tryleverage.ai/",
-    metadata: ["Software Engineer", "May 2023 - Present"],
+    metadata: ["Senior Software Engineer", "May 2023 - November 2024"],
     tasks: [
       "Architected a performant, real-time data pipeline for supplier metrics, and built the dashboard powered by it.",
       "Added observability, instrumentation, and modern state management to a moderately-sized React Application",
@@ -59,7 +69,7 @@ const EXPERIENCE = [
   {
     title: "Ambrook",
     link: "https://ambrook.com",
-    metadata: ["Software Engineer", "August 2022 - December 2022"],
+    metadata: ["Senior Software Engineer", "August 2022 - December 2022"],
     tasks: [
       "Led the creation of a cross-platform business analytics dashboard",
       "Sourced data and created engaging visualizations for Ambrook Research, an editorial publication about the agriculture industry",
